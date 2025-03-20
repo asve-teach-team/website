@@ -1,0 +1,151 @@
+body {
+    font-family: "Barlow", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff6ef;
+    color: #44404d;
+    margin-top: 30px; /* Espace pour le header fixe */
+}
+
+main {
+    padding: 40px;
+    margin: 40px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.logo {
+    margin: 5px;
+    width: 100px;
+    height: auto;
+}
+
+nav {
+    background-color: #fff6ef;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul a {
+    color: #0396a6;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: 400; /* Poids de police normal */
+    line-height: 1.5; /* Hauteur de ligne pour un espacement uniforme */
+    transition: font-weight 0.3s; /* Transition pour le changement de poids et de couleur */
+}
+
+nav ul a:hover,
+nav ul a.active {
+    font-weight: 600; /* Met en gras au survol et si actif */
+}
+
+.button-link {
+    background: linear-gradient(
+        122.095deg,
+        #51d3ac 3%,
+        #32baaa 38%,
+        #1aa8a8 64%,
+        #0497a6 100%
+    );
+    color: #fff6ef;
+    border: none; /* Enlever la bordure par défaut */
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-link:hover {
+    background: #fff6ef;
+    color: #1aa8a8;
+    border: none;
+
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Ombre plus prononcée au survol */
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    background: linear-gradient(
+        122.095deg,
+        #51d3ac 3%,
+        #32baaa 38%,
+        #1aa8a8 64%,
+        #0497a6 100%
+    );
+    margin: 10px;
+    line-height: 1.5;
+    font-size: 56px;
+}
+
+p {
+    margin: 10px;
+    margin-bottom: 1em; /* Ajoute un espace entre les paragraphes */
+    line-height: 1.5;
+    font-size: 24px;
+}
+
+footer {
+    background-color: #44404d;
+    color: #fff6ef;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+left {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-info p {
+    margin: 5px 0; /* Espacement entre les paragraphes */
+}
+
+.footer-right {
+    display: flex; /* Utiliser flexbox pour aligner les éléments */
+    align-items: flex-start; /* Alignement en haut */
+}
+
+.footer-nav {
+    list-style: none; /* Enlever les puces de la liste */
+    padding: 0; /* Enlever le padding par défaut */
+    margin: 0; /* Enlever la marge par défaut */
+}
+
+.footer-nav li {
+    margin: 5px 0; /* Espacement entre les éléments de la liste */
+}
+
+.footer-nav a {
+    text-decoration: none; /* Enlever le soulignement des liens */
+    color: #333; /* Couleur des liens */
+    transition: color 0.3s; /* Transition pour le changement de couleur */
+}
+
+.footer-nav a:hover {
+    color: #51d3ac; /* Couleur au survol */
+}
