@@ -19,7 +19,7 @@ header {
 }
 
 .logo {
-    margin: 5px;
+    margin: 15px;
     width: 100px;
     height: auto;
 }
@@ -55,6 +55,27 @@ nav ul a.active {
     font-weight: 600; /* Met en gras au survol et si actif */
 }
 
+footer ul {
+    list-style: none;
+    padding: 20px;
+}
+
+footer a {
+    list-style: none;
+    padding: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit; /* Prend la couleur du texte parent */
+    line-height: 1.5;
+    padding: 5px;
+}
+
+footer p a:hover {
+    color: #fff6ef;
+}
+
 .button-link {
     background: linear-gradient(
         122.095deg,
@@ -75,7 +96,6 @@ nav ul a.active {
     background: #fff6ef;
     color: #1aa8a8;
     border: none;
-
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Ombre plus prononcée au survol */
 }
 
@@ -114,8 +134,22 @@ p {
 footer {
     background-color: #44404d;
     color: #fff6ef;
-    padding: 20px;
+}
+
+.footer-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto; /* Centrer le footer */
+}
+
+.footer-column {
+    flex: 1; /* Chaque colonne prend une part égale de l'espace */
+    padding: 10px;
+}
+
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
 }
