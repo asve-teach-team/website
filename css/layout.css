@@ -39,7 +39,7 @@
     height: auto;
 }
 
-.association {
+.section-dark-background {
     background: #44404d;
     border-radius: 20px;
     display: flex; /* alignement des éléments */
@@ -50,7 +50,7 @@
     width: 90%;
     justify-self: center;
 }
-.h2-association {
+.h2-section-dark-background {
     color: #fff6ef;
     background: #44404d;
 }
@@ -61,21 +61,21 @@
     text-align: center;
 }
 
-.association-container {
+.section-dark-background-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 25px;
 }
 
-.association-cards {
+.section-dark-background-cards {
     text-align: center;
     overflow: hidden;
     width: 250px;
     transition: transform 0.3s;
 }
 
-.association-cards:hover {
+.section-dark-background-cards:hover {
     transform: translateY(-5px);
 }
 
@@ -99,7 +99,7 @@
     text-align: center; /* Centre le texte du titre */
 }
 
-.vignette-objectifs {
+.section-green {
     background: linear-gradient(
         122.095deg,
         #51d3ac 3%,
@@ -114,14 +114,14 @@
     justify-self: center;
 }
 
-.h2-objectifs {
+.h2-section-green {
     color: #fff6ef;
     font-size: 56px;
     margin-top: 60px;
     margin-bottom: 60px;
     text-align: center;
 }
-.p-objectifs {
+.p-section-green {
     color: #fff6ef;
     font-size: 40px;
     margin: 10%;

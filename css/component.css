@@ -85,6 +85,7 @@ main {
 
 h1 {
     font-size: 70px;
+    line-height: 1.5;
 }
 
 h2 {
@@ -95,6 +96,9 @@ h2 {
         #1aa8a8 64%,
         #0497a6 100%
     );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: #0000; /* Astuce trouvé sur le site " geekcommunicant " pour appliquer le dégradé uniquement sur le texte */
     margin: 10px;
     line-height: 1.5;
     font-size: 56px;
@@ -114,38 +118,4 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-left {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-info p {
-    margin: 5px 0; /* Espacement entre les paragraphes */
-}
-
-.footer-right {
-    display: flex; /* Utiliser flexbox pour aligner les éléments */
-    align-items: flex-start; /* Alignement en haut */
-}
-
-.footer-nav {
-    list-style: none; /* Enlever les puces de la liste */
-    padding: 0; /* Enlever le padding par défaut */
-    margin: 0; /* Enlever la marge par défaut */
-}
-
-.footer-nav li {
-    margin: 5px 0; /* Espacement entre les éléments de la liste */
-}
-
-.footer-nav a {
-    text-decoration: none; /* Enlever le soulignement des liens */
-    color: #333; /* Couleur des liens */
-    transition: color 0.3s; /* Transition pour le changement de couleur */
-}
-
-.footer-nav a:hover {
-    color: #51d3ac; /* Couleur au survol */
 }
