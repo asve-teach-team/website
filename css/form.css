@@ -73,6 +73,13 @@ body {
     font-size: 20px;
 }
 
+.submit:hover {
+    background: #fff6ef;
+    color: #1aa8a8;
+    border: none;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Ombre plus prononcée au survol */
+}
+
 .signup-link {
     color: #6b7280;
     font-size: 0.875rem;

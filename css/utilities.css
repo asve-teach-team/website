@@ -1,0 +1,278 @@
+.logo {
+    margin: 15px;
+    width: 100px;
+    height: auto;
+}
+
+.button-link {
+    background: linear-gradient(
+        122.095deg,
+        #51d3ac 3%,
+        #32baaa 38%,
+        #1aa8a8 64%,
+        #0497a6 100%
+    );
+    color: #fff6ef;
+    border: none; /* Enlever la bordure par défaut */
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.9s;
+    overflow: hidden;
+    position: relative;
+}
+
+.button-link:hover {
+    background: #fff6ef;
+    color: #1aa8a8;
+    border: none;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Ombre plus prononcée au survol */
+    transition-duration: 0.9s;
+}
+
+.text-gradient {
+    background: linear-gradient(
+        122.095deg,
+        #51d3ac 3%,
+        #32baaa 38%,
+        #1aa8a8 64%,
+        #0497a6 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: #0000; /* Astuce trouvé sur le site " geekcommunicant " pour appliquer le dégradé uniquement sur le texte */
+}
+
+/* ------------ button "retour vers le haut" récupéré sur UIVERSE.IO --------- */
+/* J'ai customisé le button pour l'adapter à mon projet */
+
+.button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: relative;
+}
+
+.svgIcon {
+    width: 12px;
+    transition-duration: 0.3s;
+}
+
+.svgIcon path {
+    fill: #fff6ef;
+}
+
+.button:hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    align-items: center;
+}
+
+.button:hover .svgIcon {
+    /* width: 20px; */
+    transition-duration: 0.3s;
+    transform: translateY(-200%);
+}
+
+.button::before {
+    position: absolute;
+    bottom: -20px;
+    content: "Retour vers le haut";
+    color: #fff6ef;
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    /* transition-duration: .3s; */
+    font-size: 0px;
+}
+
+.button:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    bottom: unset;
+    /* transform: translateY(-30px); */
+    transition-duration: 0.3s;
+}
+/* -------------------------------------------------- */
+
+.copyright {
+    text-align: center;
+    font-size: 18px;
+    padding: 5%;
+}
+
+/* ----------------------- SECTION B1 (page associaton)----------- */
+.b1-association {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4%;
+    margin-bottom: 20%;
+}
+
+.b1-association div {
+    flex: 1;
+    margin: 20px;
+}
+
+.b1-association div img {
+    flex: 2;
+    max-width: 200%;
+    height: auto;
+}
+
+/* ----------------------- SECTION B2 (page associaton)----------- */
+.b2-association {
+    display: flex; /* Utilise flexbox */
+    align-items: center; /* Centre verticalement les éléments */
+    background: linear-gradient(
+        122.095deg,
+        #51d3ac 3%,
+        #32baaa 38%,
+        #1aa8a8 64%,
+        #0497a6 100%
+    );
+    border-radius: 20px;
+    margin-bottom: 10%;
+    width: 80%;
+    padding: 60px;
+    justify-self: center;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.text-container {
+    flex: 2;
+    padding-left: 60px; /* Ajoute un peu d'espace entre l'image et le texte */
+}
+
+.h2-b2-association {
+    color: #fff6ef;
+    font-size: 56px;
+    margin-top: 60px;
+    margin-bottom: 20px; /* Réduit l'espace en bas */
+    text-align: left;
+}
+
+.p-b2-association {
+    color: #fff6ef;
+    font-size: 24px;
+    margin: 10% 0; /* Ajuste les marges */
+    text-align: left;
+}
+
+/* ----------------------- SECTION LIVRE (page associaton)----------- */
+.section-livre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20%;
+    width: 80%;
+    justify-self: center;
+}
+
+.title-section-livre {
+    color: #fff6ef;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.container-section-livre {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.img-section-livre {
+    width: 100%;
+    height: 350px; /* Hauteur fixe pour les images */
+    object-fit: cover;
+}
+
+.image-section-livre {
+    background: linear-gradient(
+        122.095deg,
+        #51d3ac 3%,
+        #32baaa 38%,
+        #1aa8a8 64%,
+        #0497a6 100%
+    );
+    color: #fff6ef;
+    padding: 15px;
+    position: relative;
+    height: 350px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.h3-section-livre {
+    font-size: 20px;
+}
+
+.p-section-livre {
+    font-size: 18px;
+}
+
+/* ----------------------- SECTION B4 (page associaton)----------- */
+.b4-association {
+    display: flex; /* Utilise flexbox */
+    flex-direction: row;
+    align-items: left; /* Centre verticalement les éléments */
+}
+
+.image-container {
+    flex: 1;
+}
+
+.text-container {
+    flex: 2;
+    padding-left: 60px; /* Ajoute un peu d'espace entre l'image et le texte */
+    text-align: left;
+}
+
+.h2-b2-association {
+    color: #fff6ef;
+    font-size: 56px;
+    margin-top: 60px;
+    margin-bottom: 20px; /* Réduit l'espace en bas */
+    text-align: left;
+}
+
+.p-b2-association {
+    color: #fff6ef;
+    font-size: 24px;
+    margin: 10% 0; /* Ajuste les marges */
+    text-align: left;
+}
+
+/* ----------------------- SECTION LOCAUX (page associaton)----------- */
+.locaux {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img-locaux {
+    border-radius: 40px;
+    margin-bottom: 10%;
+    width: 350px;
+    height: auto;
+    padding: 15px;
+}

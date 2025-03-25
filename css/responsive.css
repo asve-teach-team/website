@@ -1,0 +1,37 @@
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Aligne les éléments verticalement */
+    }
+
+    nav ul {
+        flex-direction: column; /* Aligne les éléments verticalement */
+        padding: 0; /* Supprime le padding */
+    }
+
+    nav li {
+        margin: 10px 0; /* Espacement vertical */
+    }
+
+    .dark-background-container {
+        display: flex;
+        flex-direction: column; /* Aligne les cartes verticalement */
+    }
+
+    .dark-background-cards {
+        margin-bottom: 20px; /* Espacement entre les cartes */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em; /* Réduit la taille de la police pour les petits écrans */
+    }
+
+    h2 {
+        font-size: 1.2em; /* Réduit la taille de la police pour les petits écrans */
+    }
+
+    .footer-column {
+        margin-bottom: 20px; /* Espacement entre les colonnes du footer */
+    }
+}
