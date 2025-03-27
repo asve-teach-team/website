@@ -1,3 +1,17 @@
+.section {
+    margin-top: 20px; /* Ajustez cette valeur selon la hauteur de votre en-tête */
+    opacity: 0; /* Commence invisible */
+    transform: translateY(20px); /* Déplace légèrement vers le bas */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Transition douce */
+}
+
+.section.visible {
+    opacity: 1; /* Devient visible */
+    transform: translateY(0); /* Retourne à sa position d'origine */
+}
+
+
+
 /* ------------------------------ SECTION B1 -------------------------------- */
 
 .b1 {
@@ -26,8 +40,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20%;
-    margin-bottom: 20%;
+    margin: 5%;
 }
 
 .b2 div {
@@ -50,9 +63,9 @@
     flex-direction: column; /* aligne les éléments en colonne */
     align-items: center; /* Centre les éléments horizontalement */
     padding: 60px;
-    margin-bottom: 20%;
+    margin: 5%;
     width: 80%;
-    justify-self: center;
+    justify-content: center;
 }
 .h2-dark-background {
     color: #fff6ef;
@@ -114,7 +127,7 @@
         #0497a6 100%
     ); /* J'ai recupéré le dégradé que j'ai crée sur figma avec le plugin "Figma Solid and Gradient to CSS" */
     border-radius: 20px;
-    margin-bottom: 20%;
+    margin: 5%;
     width: 80%;
     padding: 60px;
     justify-self: center;
@@ -130,7 +143,7 @@
 
 .p-green-container {
     color: #fff6ef;
-    font-size: 40px;
+    font-size: 34px;
     margin: 10%;
     text-align: center;
 }

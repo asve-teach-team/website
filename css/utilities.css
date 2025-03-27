@@ -1,6 +1,6 @@
 .logo {
     margin: 15px;
-    width: 100px;
+    width: 90px;
     height: auto;
 }
 
@@ -21,6 +21,7 @@
     transition-duration: 0.9s;
     overflow: hidden;
     position: relative;
+    text-decoration: none;
 }
 
 .button-link:hover {
@@ -113,30 +114,11 @@
     padding: 5%;
 }
 
-/* ----------------------- SECTION B1 (page associaton)----------- */
-.b1-association {
+/* ----------------------- SECTION B2 (page associaton)----------- */
+.b2-association {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 4%;
-    margin-bottom: 20%;
-}
-
-.b1-association div {
-    flex: 1;
-    margin: 20px;
-}
-
-.b1-association div img {
-    flex: 2;
-    max-width: 200%;
-    height: auto;
-}
-
-/* ----------------------- SECTION B2 (page associaton)----------- */
-.b2-association {
-    display: flex; /* Utilise flexbox */
-    align-items: center; /* Centre verticalement les éléments */
     background: linear-gradient(
         122.095deg,
         #51d3ac 3%,
@@ -145,10 +127,9 @@
         #0497a6 100%
     );
     border-radius: 20px;
-    margin-bottom: 10%;
+    margin: 5% auto; /* Utilisez auto pour centrer horizontalement */
     width: 80%;
     padding: 60px;
-    justify-self: center;
 }
 
 .image-container {
@@ -157,14 +138,13 @@
 
 .text-container {
     flex: 2;
-    padding-left: 60px; /* Ajoute un peu d'espace entre l'image et le texte */
 }
 
 .h2-b2-association {
     color: #fff6ef;
     font-size: 56px;
     margin-top: 60px;
-    margin-bottom: 20px; /* Réduit l'espace en bas */
+    margin-bottom: 20px;
     text-align: left;
 }
 
@@ -180,16 +160,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 20px;
-    margin-bottom: 20%;
-    width: 80%;
-    justify-self: center;
-}
-
-.title-section-livre {
-    color: #fff6ef;
-    margin-bottom: 10px;
-    text-align: center;
+    margin: 5%;
+    width: 90%;
 }
 
 .container-section-livre {
@@ -197,29 +171,6 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 35px;
-}
-
-.img-section-livre {
-    width: 100%;
-    height: 350px; /* Hauteur fixe pour les images */
-    object-fit: cover;
-}
-
-.image-section-livre {
-    background: linear-gradient(
-        122.095deg,
-        #51d3ac 3%,
-        #32baaa 38%,
-        #1aa8a8 64%,
-        #0497a6 100%
-    );
-    color: #fff6ef;
-    padding: 15px;
-    position: relative;
-    height: 350px;
-    width: 100%;
-    box-sizing: border-box;
-    text-align: center;
 }
 
 .h3-section-livre {
@@ -232,7 +183,9 @@
 
 /* ----------------------- SECTION B4 (page associaton)----------- */
 .b4-association {
-    display: flex; /* Utilise flexbox */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
     align-items: left; /* Centre verticalement les éléments */
 }
@@ -276,3 +229,4 @@
     height: auto;
     padding: 15px;
 }
+
