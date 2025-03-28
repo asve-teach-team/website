@@ -15,8 +15,7 @@ main {
     padding-top: 150px;
 }
 
-/* ------------------------------ HEADER ----------------------------- */
-
+/* ***************** HEADER ***************** */
 header {
     position: fixed;
     z-index: 10; /* z-index supérieur à celui des sections */
@@ -43,7 +42,7 @@ nav ul a {
     margin: 0 15px;
     font-size: 18px;
     font-weight: 400; /* Poids de police normal */
-    line-height: 1.5; /* Hauteur de ligne pour un espacement uniforme */
+    line-height: 1.5; 
     transition: font-weight 0.3s; /* Transition pour le changement de poids et de couleur */
 }
 
@@ -52,8 +51,7 @@ nav ul a.active {
     font-weight: 600; /* Met en gras au survol et si actif */
 }
 
-/* ------------------------------ FOOTER ----------------------------- */
-
+/* ********************** FOOTER ******************* */
 footer {
     background-color: #312f36;
     color: #fff6ef;
@@ -64,7 +62,7 @@ footer {
     justify-content: space-between;
     align-items: baseline;
     max-width: 1200px;
-    margin: 0 auto; /* Centrer le footer */
+    margin: 0 auto; /* Centre le footer */
 }
 
 .footer-column {
@@ -103,8 +101,7 @@ footer ul li {
     line-height: 1.5;
 }
 
-/* ------------------------------ TEXT-------------------------------- */
-
+/* *************** TEXT ***************** */
 h1 {
     font-size: 70px;
     line-height: 1.5;
@@ -131,3 +128,10 @@ p {
     line-height: 1.5;
     font-size: 24px;
 }
+
+.logo {
+    margin: 15px;
+    width: 90px;
+    height: auto;
+}
+

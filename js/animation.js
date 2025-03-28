@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const observerOptions = {
         root: null, // Utilise la fenêtre du navigateur comme racine
         rootMargin: "0px", // Pas de marge autour de la racine
-        threshold: 0.5, // 50% de la section doit être visible pour déclencher l'animation
+        threshold: 0.4, // 40% de la section doit être visible pour déclencher l'animation
     };
 
     // Fonction pour gérer l'animation des sections

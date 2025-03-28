@@ -1,41 +1,39 @@
 .section {
-    margin-top: 20px; /* Ajustez cette valeur selon la hauteur de votre en-tête */
-    opacity: 0; /* Commence invisible */
+    margin-top: 20px;
+    opacity: 0; /* Point de départ => invisible */
     transform: translateY(20px); /* Déplace légèrement vers le bas */
     transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Transition douce */
 }
 
 .section.visible {
-    opacity: 1; /* Devient visible */
+    opacity: 1; /* Pour rendre la section visible */
     transform: translateY(0); /* Retourne à sa position d'origine */
 }
 
+/* *********************** PAGE ACCUEIL ************************************* */
 
-
-/* ------------------------------ SECTION B1 -------------------------------- */
-
+/* ------ Section B1 ---------- */
 .b1 {
     padding-top: 40px;
     background-image: url("/img/classe.png");
     background-size: cover; /* Couvre toute la section */
     background-position: center; /* Centre l'image */
     background-repeat: no-repeat; /* Ne répète pas l'image */
-    padding: 40px; /* Espacement intérieur */
+    padding: 40px;
     padding-top: 100px;
-    width: 95%; /* Limite la largeur de la section */
+    width: 95%;
     margin: 0 auto; /* Centre la section horizontalement */
-    border-radius: 20px; /* Arrondit les coins de la section */
+    border-radius: 20px;
     color: #fff6ef;
-    text-align: center; /* Centre le texte */
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: end;
     align-items: center;
-    min-height: 500px; /* Hauteur minimale (ajustez selon vos besoins) */
+    min-height: 500px; /* Hauteur minimale  */
 }
 
-/* ------------------------------ SECTION B2 -------------------------------- */
-
+/* ------ Section B2 ---------- */
 .b2 {
     display: flex;
     align-items: center;
@@ -54,14 +52,13 @@
     height: auto;
 }
 
-/* ------------------------------ SECTION DARK -------------------------------- */
-
+/* ------ Section DARK_BACKGROUND ---------- */
 .dark-background {
     background: #44404d;
     border-radius: 20px;
-    display: flex; /* alignement des éléments */
-    flex-direction: column; /* aligne les éléments en colonne */
-    align-items: center; /* Centre les éléments horizontalement */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 60px;
     margin: 5%;
     width: 80%;
@@ -98,7 +95,7 @@
 
 .img-cards {
     width: 100%;
-    height: 350px; /* Hauteur fixe pour les images */
+    height: 350px;
     object-fit: cover; /* Garde les proportions de l'image */
 }
 
@@ -113,11 +110,10 @@
     color: #fff6ef;
     padding: 15px;
     bottom: 10px; /* Positionne le titre en bas de la carte */
-    text-align: center; /* Centre le texte du titre */
+    text-align: center;
 }
 
-/* ------------------------------ SECTION GREEN -------------------------------- */
-
+/* ------ Section GREEN_BACKGROUND ---------- */
 .green-container {
     background: linear-gradient(
         122.095deg,
@@ -146,4 +142,155 @@
     font-size: 34px;
     margin: 10%;
     text-align: center;
+}
+
+/* *********************** PAGE ASSOCIATION ************************************* */
+
+/* --------- Section B2 -------- */
+.b2-association {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        122.095deg,
+        #51d3ac 3%,
+        #32baaa 38%,
+        #1aa8a8 64%,
+        #0497a6 100%
+    );
+    border-radius: 20px;
+    margin: 5% auto;
+    width: 80%;
+    padding: 60px;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.text-container {
+    flex: 2;
+}
+
+.h2-b2-association {
+    color: #fff6ef;
+    font-size: 56px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.p-b2-association {
+    color: #fff6ef;
+    font-size: 24px;
+    margin: 10% 5%; /* Ajuste les marges */
+    text-align: left;
+}
+
+/* ---------- Section LIVRE --------- */
+.section-livre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 5%;
+    width: 90%;
+}
+
+.container-section-livre {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.h3-section-livre {
+    font-size: 20px;
+}
+
+.p-section-livre {
+    font-size: 18px;
+}
+
+/* ----------- Section B4 ----------- */
+.b4-association {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    align-items: left;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.text-container {
+    flex: 2;
+    padding-left: 60px;
+    text-align: left;
+}
+
+.h2-b2-association {
+    color: #fff6ef;
+    font-size: 56px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.p-b2-association {
+    color: #fff6ef;
+    font-size: 24px;
+    margin: 10% 0;
+    text-align: left;
+}
+
+/* ------ Section Locaux -------- */
+.locaux {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img-locaux {
+    border-radius: 40px;
+    margin-bottom: 10%;
+    width: 350px;
+    height: auto;
+    padding: 15px;
+}
+
+/* *********************** PAGE PROGRAMMES ************************************* */
+
+.p-adultes-niveau {
+    color: #fff6ef;
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.p-remarques-niveau {
+    color: #fff6ef;
+    font-size: 24px;
+    text-align: left;
+    line-height: 1;
+}
+
+.p-dark-font {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.btn-reglement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
 }
