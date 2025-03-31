@@ -294,3 +294,41 @@
     justify-content: center;
     padding: 40px;
 }
+
+/* *********************** PAGE HORAIRES/TARIFS ************************************* */
+
+.horaires-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 60px;
+}
+
+.horaires-cards {
+    text-align: center;
+    overflow: hidden;
+    flex: 1;
+    transition: transform 0.3s;
+}
+
+.horaires-title {
+    background: linear-gradient(
+        122.095deg,
+        #51d3ac 3%,
+        #32baaa 38%,
+        #1aa8a8 64%,
+        #0497a6 100%
+    );
+    color: #fff6ef;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.p-horaires {
+    margin-top: 20px;
+    line-height: 1.5;
+    color: 44404D;
+    font-size: 20px;
+}
