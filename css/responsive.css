@@ -1,6 +1,14 @@
-@media (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 1080px) {
+    body {
+        margin: 0px;
+        height: 100%;
+    }
+
     nav {
-        flex-direction: column; /* Aligne les éléments verticalement */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
     }
 
     nav ul {
@@ -12,17 +20,19 @@
         margin: 10px 0; /* Espacement vertical */
     }
 
-    .dark-background-container {
+    main {
+        padding: 10px;
         display: flex;
-        flex-direction: column; /* Aligne les cartes verticalement */
+        flex-direction: column;
     }
 
-    .dark-background-cards {
-        margin-bottom: 20px; /* Espacement entre les cartes */
+    .logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
     }
-}
 
-@media (max-width: 480px) {
     h1 {
         font-size: 1.5em; /* Réduit la taille de la police pour les petits écrans */
     }
@@ -31,7 +41,14 @@
         font-size: 1.2em; /* Réduit la taille de la police pour les petits écrans */
     }
 
-    .footer-column {
-        margin-bottom: 20px; /* Espacement entre les colonnes du footer */
+    h3 {
+        font-size: 1.2em; /* Réduit la taille de la police pour les petits écrans */
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
     }
 }

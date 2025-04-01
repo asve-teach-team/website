@@ -109,7 +109,7 @@
     );
     color: #fff6ef;
     padding: 15px;
-    bottom: 10px; /* Positionne le titre en bas de la carte */
+   
     text-align: center;
 }
 
@@ -308,7 +308,7 @@
 .horaires-cards {
     text-align: center;
     overflow: hidden;
-    flex: 1;
+    width: 90%;
     transition: transform 0.3s;
 }
 

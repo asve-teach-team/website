@@ -37,7 +37,7 @@ nav ul {
 }
 
 nav ul a {
-    color: #0396a6;
+    color: #44404D;
     text-decoration: none;
     margin: 0 15px;
     font-size: 18px;
@@ -48,7 +48,7 @@ nav ul a {
 
 nav ul a:hover,
 nav ul a.active {
-    font-weight: 600; /* Met en gras au survol et si actif */
+    color: #0396a6;
 }
 
 /* ********************** FOOTER ******************* */
@@ -118,7 +118,7 @@ h2 {
     -webkit-background-clip: text;
     background-clip: text;
     color: #0000; /* Astuce trouvé sur le site " geekcommunicant " pour appliquer le dégradé uniquement sur le texte */
-    margin: 10px;
+    
     line-height: 1.5;
     font-size: 56px;
 }

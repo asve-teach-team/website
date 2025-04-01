@@ -192,3 +192,30 @@
     font-size: 16px;
     margin: 10px;
 }
+
+
+/* --------- PAGE CONTACT ----------- */
+
+.maps{
+    display: flex; /* Utilise flexbox pour aligner les éléments */
+    align-items: flex-start; /* Aligne les éléments en haut */
+}
+
+.maps-container {
+    position: relative; 
+    width: 100%; 
+}
+
+.maps-image {
+    display: block; /* Pour que l'image soit un élément de bloc */
+    width: 100%; 
+    height: auto;
+}
+
+.contact-form-container {
+    position: absolute; 
+    top: 0%; 
+    right: 0%;
+    max-width: 500px; 
+    padding: 5px;
+}
