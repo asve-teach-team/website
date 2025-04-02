@@ -1,54 +1,97 @@
-@media (min-width: 320px) and (max-width: 1080px) {
+/* Styles pour les smartphones */
+@media (max-width: 600px) {
     body {
-        margin: 0px;
-        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
     }
 
-    nav {
+    .b1 {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .b1 div img,
+    .section-title {
+        display: block;
+    }
+    section,
+    .b2,
+    .b2-association,
+    .b4-association,
+    .maps-container,
+    .footer-container,
+    .footer-column {
         display: flex;
-        flex-direction: row;
+        flex-direction: column; /* Change la direction pour les petits écrans */
         justify-content: center;
-        width: 100%;
-    }
-
-    nav ul {
-        flex-direction: column; /* Aligne les éléments verticalement */
-        padding: 0; /* Supprime le padding */
-    }
-
-    nav li {
-        margin: 10px 0; /* Espacement vertical */
-    }
-
-    main {
+        align-items: center;
         padding: 10px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .logo {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        margin: 10px;
+        margin-left: auto;
+        margin-right: auto;
         width: 100%;
     }
 
-    h1 {
-        font-size: 1.5em; /* Réduit la taille de la police pour les petits écrans */
+    .b2 div {
+        margin: 10px 0; /* Ajuste les marges */
     }
 
-    h2 {
-        font-size: 1.2em; /* Réduit la taille de la police pour les petits écrans */
+    /* Masquer les images/div souhaitées */
+    .b2 div img,
+    .dark-background img,
+    .green-container img,
+    .b2-association img,
+    .activities-list {
+        display: none;
     }
 
-    h3 {
-        font-size: 1.2em; /* Réduit la taille de la police pour les petits écrans */
+    .h2-green-container,
+    .h2-b2-association {
+        font-size: 36px;
     }
 
-    footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
+    .p-dark-background,
+    .p-green-container,
+    .p-b2-association {
+        font-size: 18px; /* Réduit la taille de la police */
+    }
+
+    .img-locaux {
+        width: 100%; /* Ajuste la largeur des images */
+        height: auto; /* Assure que la hauteur est automatique */
+    }
+
+    .horaires-cards {
+        width: 100%; /* Ajuste la largeur des cartes horaires */
     }
 }
+
+/* Styles pour les tablettes */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .b1 {
+        padding: 30px;
+        min-height: 400px; /* Ajuste la hauteur minimale */
+    }
+
+    .b2 {
+        flex-direction: row; /* Rétablit la direction pour les tablettes */
+    }
+
+    .dark-background,
+    .green-container {
+        width: 85%; /* Ajuste la largeur */
+        padding: 50px; /* Ajuste le padding */
+    }
+
+    .h2-green-container,
+    .h2-b2-association {
+        font-size: 48px; /* Réduit la taille de la police */
+    }
+
+    .p-green-container,
+    .p-b2-association {
+        font-size: 20px; /* Réduit la taille de la police */
+    }
+}
+

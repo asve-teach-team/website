@@ -1,4 +1,5 @@
 /* Forms récupéré sur le site Uiverse.io */
+
 .form-contact {
     background-color: #fff;
     display: block;
@@ -8,6 +9,28 @@
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
         0 4px 6px -2px rgba(0, 0, 0, 0.05);
     justify-items: center;
+}
+.maps {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.maps-container{
+    display: flex;
+    width: 100%;
+}
+
+.maps-container iframe {
+    flex: 1; /* Prend tout l'espace disponible */
+    max-width: 900px; /* Limite la largeur de la carte */
+    height: 600px; /* Hauteur de la carte */
+    border: 0;
+}
+
+.contact-form-container {
+    flex: 1x; /* Fixe la largeur du formulaire */
+    
 }
 
 .form-title {
@@ -48,7 +71,7 @@
     font-size: 0.875rem;
     line-height: 1.25rem;
     width: 300px;
-    height: 150px;
+    height: 100px;
     border-radius: 0.5rem;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     border: 1px solid #e5e7eb;

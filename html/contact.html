@@ -19,85 +19,79 @@
         <link rel="stylesheet" href="/css/base.css" />
         <link rel="stylesheet" href="/css/layout.css" />
         <link rel="stylesheet" href="/css/component.css" />
-        <link rel="stylesheet" href="/css/utilities.css" />
-        <link rel="stylesheet" href="/css/responsive.css" />
         <link rel="stylesheet" href="/css/contact.css" />
+        <link rel="stylesheet" href="/css/utilities.css">
+        <link rel="stylesheet" href="/css/responsive.css" />
+        <link rel="stylesheet" href="/css/burger.css" />
         <link
             rel="icon"
             href="/img/favicon_io/favicon.ico"
             type="image/x-icon"
         />
         <script src="/js/scroll.js"></script>
+        <script src="/js/burger.js" ></script>
         <title>Contact de l'ASVE Vaureal</title>
     </head>
     <body>
         <header>
             <nav>
-                <div class="logo" id="#">
-                    <a href="/html/index.html"
-                        ><img
-                            src="/img/logo/color.svg"
-                            alt="Logo de l'association ASVE"
-                    /></a>
+                <div class="logo">
+                    <a href="/html/index.html">
+                        <img src="/img/logo/color.svg" alt="Logo de l'association ASVE" />
+                    </a>
                 </div>
-                <ul>
-                    <li>
-                        <a href="/html/index.html" class="barlow-light"
-                            >Accueil</a
-                        >
-                    </li>
-                    <li>
-                        <a href="/html/association.html" class="barlow-light"
-                            >L'Association</a
-                        >
-                    </li>
-                    <li>
-                        <a href="/html/programmes.html" class="barlow-light"
-                            >Programmes</a
-                        >
-                    </li>
-                    <li>
-                        <a href="/html/media.html" class="barlow-light"
-                            >Média</a
-                        >
-                    </li>
-                    <li>
-                        <a href="/html/contact.html" class="active">Contact</a>
-                    </li>
-                    <li>
-                        <a
-                            href="/html/connexion.html"
-                            target="blank"
-                            class="button-link"
-                            >Se Connecter
-                        </a>
-                    </li>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="/html/index.html" class="barlow-light">Accueil</a></li>
+                    <li><a href="/html/association.html" class="barlow-light">L'Association</a></li>
+                    <li><a href="/html/programmes.html" class="barlow-light">Programmes</a></li>
+                    <li><a href="/html/media.html" class="barlow-light">Média</a></li>
+                    <li><a href="/html/contact.html" class="active">Contact</a></li>
+                    <li><a href="/html/connexion.html" target="blank" class="button-link">Se Connecter</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <section class="maps section">
                 <div class="maps-container">
-                    <img src="/img/maps.png" alt="Exemple" class="maps-image" />
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2616.448936959521!2d2.0269085917794816!3d49.021067997495074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e68b4d78c87baf%3A0xc3efda626bcbb7c!2s6%20Pl.%20Louise%20Michel%2C%2095490%20Vaur%C3%A9al!5e0!3m2!1sfr!2sfr!4v1743591241534!5m2!1sfr!2sfr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <div class="contact-form-container">
                         <form class="form-contact">
                             <p class="form-title barlow-medium">Nom</p>
                             <div class="input-container barlow-light">
-                                <input type="text" placeholder="Entrer votre Nom" />
+                                <input
+                                    type="text"
+                                    placeholder="Entrer votre Nom"
+                                />
                             </div>
                             <p class="form-title barlow-medium">Prénom</p>
                             <div class="input-container barlow-light">
-                                <input type="text" placeholder="Entrer votre Prénom" />
+                                <input
+                                    type="text"
+                                    placeholder="Entrer votre Prénom"
+                                />
                             </div>
                             <p class="form-title barlow-medium">Email</p>
                             <div class="input-container barlow-light">
-                                <input type="email" placeholder="Entrer votre email" />
+                                <input
+                                    type="email"
+                                    placeholder="Entrer votre email"
+                                />
                             </div>
                             <p class="form-title barlow-medium">Message</p>
                             <div class="input-container-message barlow-light">
-                                <input type="text" placeholder="Taper votre message" />
+                                <input
+                                    type="text"
+                                    placeholder="Taper votre message"
+                                />
                             </div>
-                            <button type="submit" class="submit barlow-medium">Envoyer</button>
+                            <button type="submit" class="submit barlow-medium">
+                                Envoyer
+                            </button>
                         </form>
                     </div>
                 </div>
@@ -123,9 +117,9 @@
                 <div class="footer-column">
                     <ul>
                         <li>O1 02 03 04 05</li>
-                        <li>Email</li>
-                        <li>Avenue Louis Michel</li>
-                        <li>95000 Vauréal</li>
+                        <li>ecole@asve-vaureal.fr</li>
+                        <li>6 place Louise Michel</li>
+                        <li>95490 Vauréal</li>
                     </ul>
                 </div>
                 <div class="footer-column">
@@ -142,15 +136,16 @@
                 </div>
                 <div class="footer-column">
                     <p class="text-gradient barlow-light">
-                        <a href="/html/media.html">Média</a>
+                        <a href="/html/association.html">L'ASVE</a>
                     </p>
                     <p class="text-gradient barlow-light">
-                        <a href="">Mentions Légales</a>
+                        <a href="/html/media.html">Média</a>
                     </p>
+                   
                 </div>
                 <div class="footer-column">
                     <p class="text-gradient barlow-light">
-                        <a href="/html/association.html">L'ASVE</a>
+                        <a href="">Mentions Légales</a>
                     </p>
                     <a
                         href="/html/contact.html"

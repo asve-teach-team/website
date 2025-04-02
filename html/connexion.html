@@ -22,29 +22,32 @@
         <script src="/js/form.js"></script>
         <title>Connexion à mon compte</title>
     </head>
-    <header>
-        <nav>
-            <div class="logo" id="#">
-                <a href="/html/index.html"
-                    ><img
-                        src="/img/logo/color.svg"
-                        alt="Logo de l'association ASVE"
-                /></a>
-            </div>
-        </nav>
-    </header>
     <body>
+        <header>
+            <nav>
+                <div class="logo" id="#">
+                    <a href="/html/index.html">
+                        <img
+                            src="/img/logo/color.svg"
+                            alt="Logo de l'association ASVE"
+                        />
+                    </a>
+                </div>
+            </nav>
+        </header>
         <!-- Forms récupéré sur le site Uiverse.io -->
         <form class="form">
-            <p class="form-title barlow-medium">Connecte toi à ton compte</p>
+            <p class="form-title barlow-medium">Connecte-toi à ton compte</p>
             <div class="input-container barlow-light">
-                <input type="email" placeholder="Entrer votre email" />
-                <span> </span>
+                <input type="email" placeholder="Entrer votre email" required />
+                <span></span>
             </div>
             <div class="input-container barlow-light">
                 <input
                     type="password"
                     placeholder="Entrer votre mot de passe"
+                    required
+                    autocomplete="off"
                 />
             </div>
             <button type="submit" class="submit barlow-medium">

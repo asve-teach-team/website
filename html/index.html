@@ -21,25 +21,34 @@
         <link rel="stylesheet" href="/css/component.css" />
         <link rel="stylesheet" href="/css/utilities.css" />
         <link rel="stylesheet" href="/css/responsive.css" />
+        <link rel="stylesheet" href="/css/burger.css" />
         <link
             rel="icon"
             href="/img/favicon_io/favicon.ico"
             type="image/x-icon"
         />
         <script src="/js/scroll.js"></script>
+        <script src="/js/burger.js"></script>
+
         <title>Accueil de l'ASVE Vaureal</title>
     </head>
     <body>
         <header>
             <nav>
-                <div class="logo" id="#">
-                    <a href="/html/index.html"
-                        ><img
+                <div class="logo">
+                    <a href="/html/index.html">
+                        <img
                             src="/img/logo/color.svg"
                             alt="Logo de l'association ASVE"
-                    /></a>
+                        />
+                    </a>
                 </div>
-                <ul>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-list">
                     <li>
                         <a href="/html/index.html" class="active">Accueil</a>
                     </li>
@@ -68,8 +77,8 @@
                             href="/html/connexion.html"
                             target="blank"
                             class="button-link"
-                            >Se Connecter
-                        </a>
+                            >Se Connecter</a
+                        >
                     </li>
                 </ul>
             </nav>
@@ -169,9 +178,9 @@
                 <div class="footer-column">
                     <ul>
                         <li>O1 02 03 04 05</li>
-                        <li>Email</li>
-                        <li>Avenue Louis Michel</li>
-                        <li>95000 Vauréal</li>
+                        <li>ecole@asve-vaureal.fr</li>
+                        <li>6 place Louise Michel</li>
+                        <li>95490 Vauréal</li>
                     </ul>
                 </div>
                 <div class="footer-column">
@@ -188,15 +197,15 @@
                 </div>
                 <div class="footer-column">
                     <p class="text-gradient barlow-light">
-                        <a href="/html/media.html">Média</a>
+                        <a href="/html/association.html">L'ASVE</a>
                     </p>
                     <p class="text-gradient barlow-light">
-                        <a href="">Mentions Légales</a>
+                        <a href="/html/media.html">Média</a>
                     </p>
                 </div>
                 <div class="footer-column">
                     <p class="text-gradient barlow-light">
-                        <a href="/html/association.html">L'ASVE</a>
+                        <a href="">Mentions Légales</a>
                     </p>
                     <a
                         href="/html/contact.html"

@@ -1,0 +1,39 @@
+/* Styles pour le menu burger */
+.menu-toggle {
+    display: none; /* Masque le menu burger par défaut */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: #0396A6; 
+    margin: 3px 0;
+}
+
+/* Affiche le menu burger sur les petits écrans */
+@media (max-width: 600px) {
+    .menu-toggle {
+        display: flex; /* Affiche le menu burger */
+    }
+
+    nav ul {
+        display: none; /* Masque la liste de navigation par défaut */
+        flex-direction: column; /* Aligne les éléments verticalement */
+        position: absolute; /* Positionne le menu */
+        top: 60px; /* Ajuste la position */
+        left: 0;
+        background-color: #fff6ef; /* Couleur de fond du menu */
+        width: 100%; /* Prend toute la largeur */
+    }
+
+    nav ul.active {
+        display: flex; /* Affiche la liste de navigation quand active */
+    }
+
+    nav ul li {
+        padding: 10px; 
+        text-align: center; 
+    }
+}
