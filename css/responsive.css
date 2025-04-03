@@ -1,5 +1,6 @@
-/* Styles pour les smartphones */
-@media (max-width: 600px) {
+/* ----------------- RESPONSIVE POUR SMARTPHONES ---------------------- */
+
+@media (max-width: 850px) {
     body {
         margin: 0;
         padding: 0;
@@ -21,9 +22,11 @@
     .b4-association,
     .maps-container,
     .footer-container,
-    .footer-column {
+    .footer-column,
+    .text-container,
+    footer {
         display: flex;
-        flex-direction: column; /* Change la direction pour les petits écrans */
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 10px;
@@ -34,7 +37,7 @@
     }
 
     .b2 div {
-        margin: 10px 0; /* Ajuste les marges */
+        margin: 10px 0;
     }
 
     /* Masquer les images/div souhaitées */
@@ -54,44 +57,72 @@
     .p-dark-background,
     .p-green-container,
     .p-b2-association {
-        font-size: 18px; /* Réduit la taille de la police */
+        font-size: 18px;
     }
 
     .img-locaux {
-        width: 100%; /* Ajuste la largeur des images */
-        height: auto; /* Assure que la hauteur est automatique */
+        width: 100%;
+        height: auto;
     }
 
     .horaires-cards {
-        width: 100%; /* Ajuste la largeur des cartes horaires */
+        width: 100%;
+    }
+
+    .p-dark-font {
+        margin: 20px;
     }
 }
 
-/* Styles pour les tablettes */
-@media (min-width: 601px) and (max-width: 1024px) {
+/* ----------------- RESPONSIVE POUR TABLETTES ---------------------- */
+
+/* J'ai fixé le max à 1340px pour adapter les pages aux ecrans modernes des tablettes grand format et anciens ordi portable */
+
+@media (min-width: 851px) and (max-width: 1340px) {
     .b1 {
         padding: 30px;
-        min-height: 400px; /* Ajuste la hauteur minimale */
+        min-height: 400px;
     }
 
     .b2 {
-        flex-direction: row; /* Rétablit la direction pour les tablettes */
+        flex-direction: row;
+    }
+
+    .b2 div img,
+    .image-container img {
+        max-width: 90%;
+    }
+
+    .locaux img {
+        width: 250px;
     }
 
     .dark-background,
     .green-container {
-        width: 85%; /* Ajuste la largeur */
-        padding: 50px; /* Ajuste le padding */
+        width: 85%;
+        padding: 50px;
+    }
+
+    .dark-background-container,
+    .locaux {
+        flex-wrap: nowrap;
+    }
+
+    .maps-container {
+        flex-wrap: wrap;
+    }
+
+    .text-container {
+        padding-left: 5px;
     }
 
     .h2-green-container,
     .h2-b2-association {
-        font-size: 48px; /* Réduit la taille de la police */
+        font-size: 48px;
     }
 
     .p-green-container,
     .p-b2-association {
-        font-size: 20px; /* Réduit la taille de la police */
+        font-size: 20px;
     }
 }
-

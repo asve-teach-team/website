@@ -13,7 +13,7 @@
 }
 
 /* Affiche le menu burger sur les petits écrans */
-@media (max-width: 600px) {
+@media (max-width: 850px) {
     .menu-toggle {
         display: flex; /* Affiche le menu burger */
     }

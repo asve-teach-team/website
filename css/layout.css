@@ -37,12 +37,12 @@ nav ul {
 }
 
 nav ul a {
-    color: #44404D;
+    color: #44404d;
     text-decoration: none;
     margin: 0 15px;
     font-size: 18px;
     font-weight: 400; /* Poids de police normal */
-    line-height: 1.5; 
+    line-height: 1.5;
     transition: font-weight 0.3s; /* Transition pour le changement de poids et de couleur */
 }
 
@@ -83,8 +83,7 @@ footer a {
 footer a {
     text-decoration: none;
     color: inherit; /* Prend la couleur du texte parent */
-    line-height: 1.5;
-    padding: 5px;
+    line-height: 2;
 }
 
 footer p a:hover {
@@ -118,7 +117,7 @@ h2 {
     -webkit-background-clip: text;
     background-clip: text;
     color: #0000; /* Astuce trouvé sur le site " geekcommunicant " pour appliquer le dégradé uniquement sur le texte */
-    
+
     line-height: 1.5;
     font-size: 56px;
 }
@@ -134,4 +133,3 @@ p {
     width: 90px;
     height: auto;
 }
-
