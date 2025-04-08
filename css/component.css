@@ -109,7 +109,7 @@
     );
     color: #fff6ef;
     padding: 15px;
-   
+
     text-align: center;
 }
 
@@ -331,4 +331,27 @@
     line-height: 1.5;
     color: 44404D;
     font-size: 20px;
+}
+
+/* *********************** PAGE MEDIA ************************************* */
+
+.media-container {
+    display: flex;
+    align-items: self-start;
+    justify-content: center;
+    margin: 5%;
+}
+
+.media-section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.icon-store {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
