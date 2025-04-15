@@ -25,8 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
         verseResult.innerHTML = `
         <div class="card mx-auto shadow-lg">
             <div class="card-body">
-                <h3 class="card-title">Verset du Jour</h3>
-                <p class="card-text">${verse}</p>
+                <h3 class="card-title ">Verset du Jour</h3>
+                <p class="card-text verset-text">${verse}</p>
             </div> 
         </div>`;
     }

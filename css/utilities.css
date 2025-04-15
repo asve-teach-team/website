@@ -204,3 +204,30 @@
     font-size: 16px;
     margin: 10px;
 }
+
+/************ VERSET DU JOUR **************/
+.ayah-jour {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.verset-text {
+    color: #44404d;
+    font-size: 32px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.card-title {
+    background: linear-gradient(
+        122.095deg,
+        #51d3ac 3%,
+        #32baaa 38%,
+        #1aa8a8 64%,
+        #0497a6 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: #0000;
+    font-size: 32px;
+}
