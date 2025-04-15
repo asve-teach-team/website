@@ -124,5 +124,7 @@
     .p-green-container,
     .p-b2-association {
         font-size: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 }
