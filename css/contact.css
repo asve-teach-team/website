@@ -16,21 +16,20 @@
     align-items: flex-start;
 }
 
-.maps-container{
+.maps-container {
     display: flex;
     width: 100%;
 }
 
 .maps-container iframe {
-    flex: 1; /* Prend tout l'espace disponible */
+    flex: 2; /* Prend tout l'espace disponible */
     max-width: 900px; /* Limite la largeur de la carte */
     height: 600px; /* Hauteur de la carte */
     border: 0;
 }
 
 .contact-form-container {
-    flex: 1x; /* Fixe la largeur du formulaire */
-    
+    flex: 1; /* Fixe la largeur du formulaire */
 }
 
 .form-title {
