@@ -1,6 +1,5 @@
 /* ****** ANIMATION DES SECTIONS ****** */
 .section {
-    margin-top: 20px;
     opacity: 0; /* Point de départ => invisible */
     transform: translateY(20px); /* Déplace légèrement vers le bas */
     transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Transition douce */

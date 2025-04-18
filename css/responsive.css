@@ -4,7 +4,7 @@
     body {
         margin: 0;
         padding: 0;
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .b1 {
@@ -13,7 +13,8 @@
     }
 
     .b1 div img,
-    .section-title {
+    .section-title,
+    .dark-background-container {
         display: block;
     }
     section,
@@ -23,8 +24,7 @@
     .maps-container,
     .footer-container,
     .footer-column,
-    .text-container,
-    footer {
+    .text-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -42,7 +42,7 @@
 
     /* Masquer les images/div souhaitées */
     .b2 div img,
-    .dark-background img,
+    .dark-background-bis img,
     .green-container img,
     .b2-association img,
     .activities-list {
@@ -54,23 +54,90 @@
         font-size: 36px;
     }
 
-    .p-dark-background,
-    .p-green-container,
-    .p-b2-association {
-        font-size: 18px;
-    }
-
     .img-locaux {
-        width: 100%;
+        width: 70%;
         height: auto;
     }
 
     .horaires-cards {
-        width: 100%;
+        width: 70%;
     }
 
-    .p-dark-font {
+    .p-dark-font,
+    .dark-background-container {
         margin: 20px;
+    }
+
+    .niveau-title {
+        background: none;
+    }
+}
+
+
+footer {
+    background-color: #312f36;
+    color: #fff6ef;
+    padding: 20px 0; /* Ajoute un peu d'espace en haut et en bas */
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux colonnes de passer à la ligne sur les petits écrans */
+    justify-content: space-between;
+    align-items: flex-start; /* Aligne les éléments en haut */
+    max-width: 1200px;
+    margin: 0 auto; /* Centre le footer */
+    padding: 0 20px; /* Ajoute un peu d'espace sur les côtés */
+}
+
+.footer-column {
+    flex: 1; /* Chaque colonne prend une part égale de l'espace */
+    padding: 10px;
+    min-width: 200px; /* Assure que les colonnes ne deviennent pas trop étroites */
+}
+
+footer ul {
+    list-style: none;
+    padding: 0; /* Supprime le padding par défaut */
+    margin: 0; /* Supprime la marge par défaut */
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit; /* Prend la couleur du texte parent */
+    line-height: 2;
+}
+
+footer a:hover {
+    color: #fff6ef; /* Change la couleur au survol */
+}
+
+footer div img {
+    width: 100px;
+    height: auto;
+    margin: 15px;
+}
+
+footer ul li {
+    line-height: 1.5;
+}
+
+.copyright {
+    text-align: center; /* Centre le texte des droits d'auteur */
+    margin-top: 20px; /* Ajoute un espace au-dessus */
+    font-size: 0.9em; /* Réduit légèrement la taille de la police */
+}
+
+/* Styles pour les petits écrans */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Colonne unique sur les petits écrans */
+        align-items: center; /* Centre les colonnes */
+    }
+
+    .footer-column {
+        text-align: center; /* Centre le texte dans chaque colonne */
+        margin-bottom: 20px; /* Ajoute un espace entre les colonnes */
     }
 }
 
@@ -97,13 +164,13 @@
         width: 250px;
     }
 
-    .dark-background,
+    .dark-background-bis,
     .green-container {
         width: 85%;
         padding: 50px;
     }
 
-    .dark-background-container,
+    .dark-background-container-bis,
     .locaux {
         flex-wrap: nowrap;
     }
