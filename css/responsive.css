@@ -76,7 +76,7 @@
     .niveau-title {
         background: none;
     }
-}
+
 
 footer {
     background-color: #312f36;
@@ -128,6 +128,8 @@ footer ul li {
     text-align: center;
     margin-top: 20px; /* Ajoute un espace au-dessus */
     font-size: 0.9em; /* Réduit légèrement la taille de la police */
+}
+
 }
 
 /* ----------------- RESPONSIVE POUR TABLETTES ---------------------- */
