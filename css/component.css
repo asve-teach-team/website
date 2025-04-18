@@ -1,0 +1,343 @@
+/* *********************** PAGE ACCUEIL ************************************* */
+/* ------ Section B1 ---------- */
+.b1 {
+    padding-top: 40px;
+    background-image: url("/img/classe.png");
+    background-size: cover; /* Couvre toute la section */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Ne répète pas l'image */
+    padding: 40px;
+    padding-top: 100px;
+    width: 95%;
+    margin: 0 auto; /* Centre la section horizontalement */
+    border-radius: 20px;
+    color: #fff6ef;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    min-height: 500px; /* Hauteur minimale  */
+}
+
+/* ------ Section B2 ---------- */
+.b2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+}
+
+.b2 div {
+    flex: 1; /* Permet à l'image de prendre de l'espace */
+    margin: 5px;
+}
+
+.b2 div img {
+    flex: 2;
+    max-width: 200%;
+    height: auto;
+}
+
+/* ------ Section DARK_BACKGROUND ---------- */
+.dark-background {
+    background: #44404d;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    margin: 5%;
+    width: 80%;
+    justify-content: center;
+}
+.h2-dark-background {
+    color: #fff6ef;
+    background: #44404d;
+}
+
+.section-title {
+    color: #fff6ef;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.dark-background-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.dark-background-cards {
+    text-align: center;
+    overflow: hidden;
+    width: 250px;
+    transition: transform 0.3s;
+}
+
+.dark-background-cards:hover {
+    transform: translateY(-5px);
+}
+
+.img-cards {
+    width: 100%;
+    height: 350px;
+    object-fit: cover; /* Garde les proportions de l'image */
+}
+
+.image-title {
+    background: linear-gradient(
+        122.095deg,
+        #51d3ac 3%,
+        #32baaa 38%,
+        #1aa8a8 64%,
+        #0497a6 100%
+    );
+    color: #fff6ef;
+    padding: 15px;
+
+    text-align: center;
+}
+
+/* ------ Section GREEN_BACKGROUND ---------- */
+.green-container {
+    background: linear-gradient(
+        122.095deg,
+        #51d3ac 3%,
+        #32baaa 38%,
+        #1aa8a8 64%,
+        #0497a6 100%
+    ); /* J'ai recupéré le dégradé que j'ai crée sur figma avec le plugin "Figma Solid and Gradient to CSS" */
+    border-radius: 20px;
+    margin: 5%;
+    width: 80%;
+    padding: 60px;
+    justify-self: center;
+}
+
+.h2-green-container {
+    color: #fff6ef;
+    font-size: 56px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.p-green-container {
+    color: #fff6ef;
+    font-size: 34px;
+    margin: 10%;
+    text-align: center;
+}
+
+/* *********************** PAGE ASSOCIATION ************************************* */
+
+/* --------- Section B2 -------- */
+.b2-association {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        122.095deg,
+        #51d3ac 3%,
+        #32baaa 38%,
+        #1aa8a8 64%,
+        #0497a6 100%
+    );
+    border-radius: 20px;
+    margin: 5% auto;
+    width: 80%;
+    padding: 60px;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.text-container {
+    flex: 2;
+}
+
+.h2-b2-association {
+    color: #fff6ef;
+    font-size: 56px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.p-b2-association {
+    color: #fff6ef;
+    font-size: 24px;
+    margin: 10% 5%; /* Ajuste les marges */
+    text-align: left;
+}
+
+/* ---------- Section LIVRE --------- */
+.section-livre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 5%;
+    width: 90%;
+}
+
+.container-section-livre {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.h3-section-livre {
+    font-size: 20px;
+}
+
+.p-section-livre {
+    font-size: 18px;
+}
+
+/* ----------- Section B4 ----------- */
+.b4-association {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.text-container {
+    flex: 2;
+    padding-left: 60px;
+    text-align: left;
+}
+
+.h2-b2-association {
+    color: #fff6ef;
+    font-size: 56px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.p-b2-association {
+    color: #fff6ef;
+    font-size: 24px;
+    margin: 10% 0;
+    text-align: left;
+}
+
+/* ------ Section Locaux -------- */
+.locaux {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img-locaux {
+    border-radius: 40px;
+    margin-bottom: 10%;
+    width: 350px;
+    height: auto;
+    padding: 15px;
+}
+
+/* *********************** PAGE PROGRAMMES ************************************* */
+
+.p-adultes-niveau {
+    color: #fff6ef;
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.p-remarques-niveau {
+    color: #fff6ef;
+    font-size: 24px;
+    text-align: left;
+    line-height: 1;
+}
+
+.p-dark-font {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.btn-reglement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+/* *********************** PAGE HORAIRES/TARIFS ************************************* */
+
+.horaires-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 60px;
+}
+
+.horaires-cards {
+    text-align: center;
+    overflow: hidden;
+    width: 90%;
+    transition: transform 0.3s;
+}
+
+.horaires-title {
+    background: linear-gradient(
+        122.095deg,
+        #51d3ac 3%,
+        #32baaa 38%,
+        #1aa8a8 64%,
+        #0497a6 100%
+    );
+    color: #fff6ef;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.p-horaires {
+    margin-top: 20px;
+    line-height: 1.5;
+    color: #44404d;
+    font-size: 20px;
+}
+
+/* *********************** PAGE MEDIA ************************************* */
+
+.media-container {
+    display: flex;
+    align-items: self-start;
+    justify-content: center;
+    margin: 5%;
+}
+
+.media-section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.icon-store {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

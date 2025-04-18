@@ -1,0 +1,135 @@
+body {
+    font-family: "Barlow", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff6ef;
+    color: #44404d;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    padding-top: 150px;
+}
+
+/* ***************** HEADER ***************** */
+header {
+    position: fixed;
+    z-index: 10; /* z-index supérieur à celui des sections */
+    background: #fff6ef;
+    width: 100%;
+}
+
+nav {
+    background-color: #fff6ef;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul a {
+    color: #44404d;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: 400; /* Poids de police normal */
+    line-height: 1.5;
+    transition: font-weight 0.3s; /* Transition pour le changement de poids et de couleur */
+}
+
+nav ul a:hover,
+nav ul a.active {
+    color: #0396a6;
+}
+
+/* ********************** FOOTER ******************* */
+footer {
+    background-color: #312f36;
+    color: #fff6ef;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    max-width: 1200px;
+    margin: 0 auto; /* Centre le footer */
+}
+
+.footer-column {
+    flex: 1; /* Chaque colonne prend une part égale de l'espace */
+    padding: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 20px;
+}
+
+footer a {
+    list-style: none;
+    padding: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit; /* Prend la couleur du texte parent */
+    line-height: 2;
+}
+
+footer p a:hover {
+    color: #fff6ef;
+}
+
+footer div img {
+    width: 100px;
+    height: auto;
+    margin: 15px;
+}
+
+footer ul li {
+    line-height: 1.5;
+}
+
+/* *************** TEXT ***************** */
+h1 {
+    font-size: 70px;
+    line-height: 1.5;
+}
+
+h2 {
+    background: linear-gradient(
+        122.095deg,
+        #51d3ac 3%,
+        #32baaa 38%,
+        #1aa8a8 64%,
+        #0497a6 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: #0000; /* Astuce trouvé sur le site " geekcommunicant " pour appliquer le dégradé uniquement sur le texte */
+
+    line-height: 1.5;
+    font-size: 56px;
+}
+
+p {
+    margin-bottom: 1em; /* Ajoute un espace entre les paragraphes */
+    line-height: 1.5;
+    font-size: 24px;
+}
+
+.logo {
+    margin: 15px;
+    width: 90px;
+    height: auto;
+}

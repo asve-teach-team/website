@@ -1,0 +1,130 @@
+/* ----------------- RESPONSIVE POUR SMARTPHONES ---------------------- */
+
+@media (max-width: 850px) {
+    body {
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+    }
+
+    .b1 {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .b1 div img,
+    .section-title {
+        display: block;
+    }
+    section,
+    .b2,
+    .b2-association,
+    .b4-association,
+    .maps-container,
+    .footer-container,
+    .footer-column,
+    .text-container,
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .b2 div {
+        margin: 10px 0;
+    }
+
+    /* Masquer les images/div souhaitées */
+    .b2 div img,
+    .dark-background img,
+    .green-container img,
+    .b2-association img,
+    .activities-list {
+        display: none;
+    }
+
+    .h2-green-container,
+    .h2-b2-association {
+        font-size: 36px;
+    }
+
+    .p-dark-background,
+    .p-green-container,
+    .p-b2-association {
+        font-size: 18px;
+    }
+
+    .img-locaux {
+        width: 100%;
+        height: auto;
+    }
+
+    .horaires-cards {
+        width: 100%;
+    }
+
+    .p-dark-font {
+        margin: 20px;
+    }
+}
+
+/* ----------------- RESPONSIVE POUR TABLETTES ---------------------- */
+
+/* J'ai fixé le max à 1340px pour adapter les pages aux ecrans modernes des tablettes grand format et anciens ordi portable */
+
+@media (min-width: 851px) and (max-width: 1340px) {
+    .b1 {
+        padding: 30px;
+        min-height: 400px;
+    }
+
+    .b2 {
+        flex-direction: row;
+    }
+
+    .b2 div img,
+    .image-container img {
+        max-width: 90%;
+    }
+
+    .locaux img {
+        width: 250px;
+    }
+
+    .dark-background,
+    .green-container {
+        width: 85%;
+        padding: 50px;
+    }
+
+    .dark-background-container,
+    .locaux {
+        flex-wrap: nowrap;
+    }
+
+    .maps-container {
+        flex-wrap: wrap;
+    }
+
+    .text-container {
+        padding-left: 5px;
+    }
+
+    .h2-green-container,
+    .h2-b2-association {
+        font-size: 48px;
+    }
+
+    .p-green-container,
+    .p-b2-association {
+        font-size: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}

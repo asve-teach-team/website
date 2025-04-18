@@ -1,0 +1,131 @@
+/* ******** BUTTON ******** */
+.button-link {
+    background: linear-gradient(
+        122.095deg,
+        #51d3ac 3%,
+        #32baaa 38%,
+        #1aa8a8 64%,
+        #0497a6 100%
+    );
+    color: #fff6ef;
+    border: none; /* Enleve la bordure par défaut */
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.9s;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+}
+
+.button-link:hover {
+    background: #fff6ef;
+    color: #1aa8a8;
+    border: none;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Ombre plus prononcée au survol */
+    transition-duration: 0.9s;
+}
+
+/* ******** TEXT_DEGRADE ******** */
+.text-gradient {
+    background: linear-gradient(
+        122.095deg,
+        #51d3ac 3%,
+        #32baaa 38%,
+        #1aa8a8 64%,
+        #0497a6 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: #0000; /* Astuce trouvé sur le site " geekcommunicant " pour appliquer le dégradé uniquement sur le texte */
+}
+
+/* ******* COPYRIGHT (Footer) ******* */
+.copyright {
+    text-align: center;
+    font-size: 18px;
+    padding: 5%;
+}
+
+/* ******* Section : Description des niveaux ********* */
+.niveau-title {
+    text-align: left;
+    background: linear-gradient(
+        122.095deg,
+        #51d3ac 3%,
+        #32baaa 38%,
+        #1aa8a8 64%,
+        #0497a6 100%
+    );
+    color: #fff6ef;
+    padding: 10px;
+    margin: 0; /* Supprime la marge pour coller le bloc suivant */
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+    background: #fff6ef;
+    color: #44404d;
+    padding: 40px;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.text-left {
+    font-size: 20px;
+    text-align: left;
+    line-height: 2;
+}
+
+.text-right {
+    font-size: 20px;
+    text-align: right;
+    line-height: 2;
+    align-content: end;
+}
+
+.objectifs-list,
+.activities-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.activities-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1; /* Chaque colonne prend une part égale de l'espace disponible */
+    margin-right: 20px;
+}
+
+.column:last-child {
+    margin-right: 0; /* Supprime la marge à droite de la dernière colonne */
+}
+
+.div-rglt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.title-rglt {
+    background: linear-gradient(
+        122.095deg,
+        #51d3ac 3%,
+        #32baaa 38%,
+        #1aa8a8 64%,
+        #0497a6 100%
+    );
+    color: #fff6ef;
+    border: none; /* Enleve la bordure par défaut */
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+}
