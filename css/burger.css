@@ -1,3 +1,13 @@
+header {
+    position: fixed;
+    top: 0; /* Positionne le header tout en haut */
+    left: 0; /* Aligne le header à gauche */
+    right: 0; /* Aligne le header à droite */
+    z-index: 1000; /* Assure que le header est au-dessus des autres éléments */
+    background-color: #fff6ef;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre pour le header */
+}
+
 /* Styles pour le menu burger */
 .menu-toggle {
     display: none; /* Masque le menu burger par défaut */
@@ -15,10 +25,6 @@
 
 /* Affiche le menu burger sur les petits écrans */
 @media (max-width: 850px) {
-    header {
-        position: fixed;
-    }
-
     .menu-toggle {
         display: flex; /* Affiche le menu burger */
     }
@@ -27,7 +33,7 @@
         display: none; /* Masque la liste de navigation par défaut */
         flex-direction: column; /* Aligne les éléments verticalement */
         position: absolute; /* Positionne le menu */
-        top: 60px; /* Ajuste la position */
+        top: 120px; /* Ajuste la position */
         left: 0;
         background-color: #fff6ef; /* Couleur de fond du menu */
         width: 100%; /* Prend toute la largeur */
@@ -41,4 +47,10 @@
         padding: 10px;
         text-align: center;
     }
+}
+
+/* Ajout d'un margin-top au main pour éviter qu'il soit masqué par le header */
+main {
+    margin-top: 70px;
+    padding: 20px;
 }
