@@ -1,0 +1,23 @@
+<urlset
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <url>
+        <loc>https://www.asve-vaureal.fr/html/association.html</loc>
+        <lastmod>2025-04-18T18:22:00+02:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.asve-vaureal.fr/html/programmes.html</loc>
+        <lastmod>2025-04-18T18:22:00+02:00</lastmod>
+        <priority>0.70</priority>
+    </url>
+    <url>
+        <loc>https://www.asve-vaureal.fr/html/ressources.html</loc>
+        <lastmod>2025-04-18T18:22:00+02:00</lastmod>
+        <priority>0.60</priority>
+    </url>
+    <url>
+        <loc>https://mon.asve-vaureal.fr</loc>
+        <lastmod>2025-04-18T18:22:00+02:00</lastmod>
+        <priority>0.50</priority>
+    </url>
+</urlset>
