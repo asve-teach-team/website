@@ -3,6 +3,7 @@
     display: none; /* Masque le menu burger par défaut */
     flex-direction: column;
     cursor: pointer;
+    z-index: 10; /* Assure que le menu burger est au-dessus des autres éléments */
 }
 
 .bar {
@@ -14,6 +15,10 @@
 
 /* Affiche le menu burger sur les petits écrans */
 @media (max-width: 850px) {
+    header {
+        position: fixed;
+    }
+
     .menu-toggle {
         display: flex; /* Affiche le menu burger */
     }

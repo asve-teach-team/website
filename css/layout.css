@@ -6,6 +6,7 @@ body {
     color: #44404d;
     color: #44404d;
     width: 100%;
+    overflow-x: hidden; /* Empêche le défilement horizontal */
 }
 
 main {

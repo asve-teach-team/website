@@ -45,6 +45,7 @@
     .dark-background-bis img,
     .green-container img,
     .b2-association img,
+    footer img,
     .activities-list {
         display: none;
     }
@@ -54,8 +55,12 @@
         font-size: 36px;
     }
 
+    .dark-background-cards {
+        margin: 20px;
+    }
+
     .img-locaux {
-        width: 70%;
+        width: 90%;
         height: auto;
     }
 
@@ -81,12 +86,9 @@ footer {
 
 .footer-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
-    padding: 0 20px; /* Ajoute un peu d'espace sur les côtés */
 }
 
 .footer-column {
@@ -119,25 +121,13 @@ footer div img {
 
 footer ul li {
     line-height: 1.5;
+    text-align: center;
 }
 
 .copyright {
-    text-align: center; /* Centre le texte des droits d'auteur */
+    text-align: center;
     margin-top: 20px; /* Ajoute un espace au-dessus */
     font-size: 0.9em; /* Réduit légèrement la taille de la police */
-}
-
-/* Styles pour les petits écrans */
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column; /* Colonne unique sur les petits écrans */
-        align-items: center; /* Centre les colonnes */
-    }
-
-    .footer-column {
-        text-align: center; /* Centre le texte dans chaque colonne */
-        margin-bottom: 20px; /* Ajoute un espace entre les colonnes */
-    }
 }
 
 /* ----------------- RESPONSIVE POUR TABLETTES ---------------------- */
