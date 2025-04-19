@@ -1,19 +1,18 @@
 header {
     position: fixed;
-    top: 0; /* Positionne le header tout en haut */
-    left: 0; /* Aligne le header à gauche */
-    right: 0; /* Aligne le header à droite */
-    z-index: 1000; /* Assure que le header est au-dessus des autres éléments */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
     background-color: #fff6ef;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre pour le header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Styles pour le menu burger */
 .menu-toggle {
     display: none; /* Masque le menu burger par défaut */
     flex-direction: column;
     cursor: pointer;
-    z-index: 10; /* Assure que le menu burger est au-dessus des autres éléments */
+    z-index: 10;
 }
 
 .bar {
@@ -31,21 +30,37 @@ header {
 
     nav ul {
         display: none; /* Masque la liste de navigation par défaut */
-        flex-direction: column; /* Aligne les éléments verticalement */
-        position: absolute; /* Positionne le menu */
-        top: 120px; /* Ajuste la position */
+        flex-direction: column;
+        position: fixed;
+        top: 0; /* Commence en haut de l'écran */
         left: 0;
-        background-color: #fff6ef; /* Couleur de fond du menu */
+        background-color: #fff6ef;
         width: 100%; /* Prend toute la largeur */
+        height: 100%; /* Prend toute la hauteur */
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.3s ease; /* Animation pour l'affichage */
+        transform: translateY(-100%); /* Masque le menu par défaut */
     }
 
     nav ul.active {
         display: flex; /* Affiche la liste de navigation quand active */
+        transform: translateY(0); /* Affiche le menu */
     }
 
     nav ul li {
         padding: 10px;
         text-align: center;
+        background: linear-gradient(
+            122.095deg,
+            #51d3ac 3%,
+            #32baaa 38%,
+            #1aa8a8 64%,
+            #0497a6 100%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: #0000;
     }
 }
 

@@ -1,10 +1,11 @@
 /* ----------------- RESPONSIVE POUR SMARTPHONES ---------------------- */
 
 @media (max-width: 850px) {
-    body {
+    body, header, footer {
         margin: 0;
         padding: 0;
         font-size: 20px;
+        overflow-x: hidden;
     }
 
     .b1 {
@@ -30,7 +31,7 @@
         justify-content: center;
         align-items: center;
         padding: 10px;
-        margin: 10px;
+        margin-top: 40px;
         margin-left: auto;
         margin-right: auto;
         width: 100%;
@@ -48,11 +49,6 @@
     footer img,
     .activities-list {
         display: none;
-    }
-
-    .h2-green-container,
-    .h2-b2-association {
-        font-size: 36px;
     }
 
     .dark-background-cards {
@@ -77,59 +73,65 @@
         background: none;
     }
 
+    .description {
+        border-radius: 20px;
+    }
 
-footer {
-    background-color: #312f36;
-    color: #fff6ef;
-    padding: 20px 0; /* Ajoute un peu d'espace en haut et en bas */
-}
+    .media-section {
+        justify-content: right;
+    }
 
-.footer-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-}
+    footer {
+        background-color: #312f36;
+        color: #fff6ef;
+        padding: 20px 0; /* Ajoute un peu d'espace en haut et en bas */
+    }
 
-.footer-column {
-    flex: 1;
-    padding: 10px;
-    min-width: 200px; /* Assure que les colonnes ne deviennent pas trop étroites */
-}
+    .footer-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
 
-footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+    .footer-column {
+        flex: 1;
+        padding: 10px;
+        min-width: 200px; /* Assure que les colonnes ne deviennent pas trop étroites */
+    }
 
-footer a {
-    text-decoration: none;
-    color: inherit; /* Prend la couleur du texte parent */
-    line-height: 2;
-}
+    footer ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
 
-footer a:hover {
-    color: #fff6ef;
-}
+    footer a {
+        text-decoration: none;
+        color: inherit; /* Prend la couleur du texte parent */
+        line-height: 2;
+    }
 
-footer div img {
-    width: 100px;
-    height: auto;
-    margin: 15px;
-}
+    footer a:hover {
+        color: #fff6ef;
+    }
 
-footer ul li {
-    line-height: 1.5;
-    text-align: center;
-}
+    footer div img {
+        width: 100px;
+        height: auto;
+        margin: 15px;
+    }
 
-.copyright {
-    text-align: center;
-    margin-top: 20px; /* Ajoute un espace au-dessus */
-    font-size: 0.9em; /* Réduit légèrement la taille de la police */
-}
+    footer ul li {
+        line-height: 1.5;
+        text-align: center;
+    }
 
+    .copyright {
+        text-align: center;
+        margin-top: 20px; /* Ajoute un espace au-dessus */
+        font-size: 0.9em; /* Réduit légèrement la taille de la police */
+    }
 }
 
 /* ----------------- RESPONSIVE POUR TABLETTES ---------------------- */
