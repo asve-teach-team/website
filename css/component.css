@@ -300,6 +300,14 @@
 
 /* *********************** PAGE PROGRAMMES ************************************* */
 
+
+.cards-programmes {
+    position: relative;
+    overflow: hidden; /* Pour cacher les débordements */
+    border-radius: 10px;
+   
+} 
+
 .p-adultes-niveau {
     color: #fff6ef;
     font-size: 24px;
