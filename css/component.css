@@ -86,7 +86,7 @@
     object-fit: cover; /* Garde les proportions de l'image */
 }
 
-.image-title {
+.image-title-index {
     background: linear-gradient(
         122.095deg,
         #51d3ac 3%,
@@ -203,12 +203,51 @@
     gap: 35px;
 }
 
+.cards-section-livre {
+    position: relative;
+    overflow: hidden; /* Pour cacher les débordements */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    width: 250px;
+}
+
+.cards-section-livre:hover {
+    transform: scale(1.03); /* Zoom au survol */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.image-title {
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(
+        122.095deg,
+        #51d3ac 3%,
+        #32baaa 38%,
+        #1aa8a8 64%,
+        #0497a6 100%
+    );
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0; /* Masquer par défaut */
+    transition: opacity 0.6s ease;
+    height: 100px;
+}
+
+.cards-section-livre:hover .image-title {
+    opacity: 1; /* Afficher les détails au survol */
+}
+
 .h3-section-livre {
     font-size: 20px;
+    margin: 0; /* Supprimer les marges par défaut */
 }
 
 .p-section-livre {
     font-size: 18px;
+    margin: 5px 0 0; /* Espacement entre le titre et la description */
 }
 
 /* ----------- Section B4 ----------- */
@@ -391,7 +430,7 @@
     transition: transform 0.3s;
     border: 1px Solid #0396a6;
     border-radius: 10px;
-    margin: 20px
+    margin: 20px;
 }
 
 .horaires-title {
