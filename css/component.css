@@ -96,7 +96,6 @@
     );
     color: #fff6ef;
     padding: 15px;
-
     text-align: center;
 }
 
@@ -227,6 +226,7 @@
         #1aa8a8 64%,
         #0497a6 100%
     );
+    color: #fff6ef;
     position: absolute;
     bottom: 0;
     left: 0;
