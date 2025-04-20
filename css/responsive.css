@@ -1,7 +1,9 @@
 /* ----------------- RESPONSIVE POUR SMARTPHONES ---------------------- */
 
 @media (max-width: 850px) {
-    body, header, footer {
+    body,
+    header,
+    footer {
         margin: 0;
         padding: 0;
         font-size: 20px;
@@ -32,9 +34,7 @@
         align-items: center;
         padding: 10px;
         margin-top: 40px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
+        width: 90%;
     }
 
     .b2 div {
@@ -56,12 +56,13 @@
     }
 
     .img-locaux {
-        width: 90%;
+        width: 100%;
         height: auto;
     }
 
     .horaires-cards {
-        width: 70%;
+        width: 100%;
+        margin: auto;
     }
 
     .p-dark-font,
@@ -81,6 +82,14 @@
         justify-content: right;
     }
 
+    .text-left {
+        line-height: 1.5;
+    }
+
+    .div-rglt {
+        padding: 20px;
+    }
+
     footer {
         background-color: #312f36;
         color: #fff6ef;
@@ -96,7 +105,7 @@
 
     .footer-column {
         flex: 1;
-        padding: 10px;
+        padding: 5px;
         min-width: 200px; /* Assure que les colonnes ne deviennent pas trop étroites */
     }
 
@@ -128,7 +137,7 @@
     }
 
     .copyright {
-        text-align: center;
+        justify-content: center;
         margin-top: 20px; /* Ajoute un espace au-dessus */
         font-size: 0.9em; /* Réduit légèrement la taille de la police */
     }
