@@ -300,13 +300,11 @@
 
 /* *********************** PAGE PROGRAMMES ************************************* */
 
-
 .cards-programmes {
     position: relative;
     overflow: hidden; /* Pour cacher les débordements */
     border-radius: 10px;
-   
-} 
+}
 
 .p-adultes-niveau {
     color: #fff6ef;
@@ -462,7 +460,7 @@
     font-size: 20px;
 }
 
-/* *********************** PAGE MEDIA ************************************* */
+/* *********************** PAGE RESSOURCES ************************************* */
 
 .media-container {
     display: flex;
@@ -483,4 +481,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 30px;
+}
+
+.apps-icon {
+    overflow: hidden;
+    transition: transform 0.3s;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+
+.apps-icon:hover {
+    transform: translateY(-5px);
 }
