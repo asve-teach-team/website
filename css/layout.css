@@ -66,15 +66,15 @@ footer {
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-   
-    margin: 0 auto; /* Centre le footer */
+    justify-content: center;
+    align-content: center;
 }
 
 .footer-column {
     flex: 1; /* Chaque colonne prend une part égale de l'espace */
-    padding: 10px;
+    padding: 40px;
+    margin-top: 40px;
+    justify-content: center;
 }
 
 footer ul {

@@ -6,7 +6,7 @@
     footer {
         margin: 0;
         padding: 0;
-        font-size: 20px;
+        font-size: 18px;
         overflow-x: hidden;
     }
 
@@ -26,14 +26,13 @@
     .b4-association,
     .maps-container,
     .footer-container,
-    .footer-column,
-    .text-container {
+    .footer-column {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 10px;
-        margin-top: 40px;
+        margin-top: 20px;
         width: 90%;
     }
 
@@ -51,8 +50,39 @@
         display: none;
     }
 
-    .h2-b2-association {
+    h1 {
+        font-size: 48px;
+        line-height: 1.2em;
+    }
+
+    .b1 h3 {
+        display: flex;
+        justify-content: center;
+    }
+
+    h2 {
+        font-size: 34px;
+        line-height: 1em;
+        margin-bottom: 20px;
+    }
+
+    .h2-b2-association,
+    .h2-green-container,
+    .b2-association {
         margin-top: 10px;
+        font-size: 34px;
+        margin-bottom: 30px;
+    }
+
+    p,
+    .p-green-container,
+    .text-container,
+    .p-b2-association {
+        font-size: 20px;
+    }
+
+    .dark-background {
+        margin: 0 10px;
     }
 
     .dark-background-cards {
@@ -160,9 +190,21 @@
         flex-direction: row;
     }
 
-    .b2 div img,
+    .b2-association div img {
+        display: none;
+    }
+
+    .b2-association {
+        display: block;
+    }
+
     .image-container img {
-        max-width: 90%;
+        max-width: 100%;
+    }
+
+    .b2-association {
+        margin: 10px 0;
+        width: 90%;
     }
 
     .locaux img {
@@ -191,6 +233,7 @@
     .h2-green-container,
     .h2-b2-association {
         font-size: 48px;
+        justify-self: center
     }
 
     .p-green-container,
