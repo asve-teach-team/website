@@ -54,7 +54,7 @@
     .h2-b2-association {
         margin-top: 10px;
     }
-    
+
     .dark-background-cards {
         margin: 20px;
     }
@@ -65,8 +65,7 @@
     }
 
     .horaires-cards {
-        width: 100%;
-        margin: auto;
+        width: 350px;
     }
 
     .p-dark-font,
