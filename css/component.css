@@ -97,6 +97,7 @@
     color: #fff6ef;
     padding: 15px;
     text-align: center;
+    font-size: 24px;
 }
 
 /* ------ Section GREEN_BACKGROUND ---------- */
@@ -288,6 +289,8 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 35px;
+    margin-top: 30px
 }
 
 .img-locaux {
@@ -296,6 +299,7 @@
     width: 350px;
     height: auto;
     padding: 15px;
+    
 }
 
 /* *********************** PAGE PROGRAMMES ************************************* */
@@ -430,7 +434,7 @@
 }
 
 .horaires-cards {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.3);
     display: block;
     padding: 3rem;
     width: 200px;
@@ -438,7 +442,7 @@
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
         0 4px 6px -2px rgba(0, 0, 0, 0.05);
     justify-items: center;
-   
+
     text-align: center;
 }
 

@@ -109,7 +109,7 @@ footer ul li {
 
 /* *************** TEXT ***************** */
 h1 {
-    font-size: 70px;
+    font-size: 82px;
     line-height: 1.5;
 }
 
@@ -124,9 +124,13 @@ h2 {
     -webkit-background-clip: text;
     background-clip: text;
     color: #0000; /* Astuce trouvé sur le site " geekcommunicant " pour appliquer le dégradé uniquement sur le texte */
-
+    margin: 20px 0;
     line-height: 1.5;
     font-size: 56px;
+}
+
+h3 {
+    font-size: 28px;
 }
 
 p {

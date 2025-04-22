@@ -25,14 +25,21 @@
     .b2-association,
     .b4-association,
     .maps-container,
-    .footer-container,
-    .footer-column {
+    .footer-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 10px;
         margin-top: 20px;
+        width: 90%;
+    }
+
+    .footer-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 90%;
     }
 
@@ -51,7 +58,7 @@
     }
 
     h1 {
-        font-size: 48px;
+        font-size: 50px;
         line-height: 1.2em;
     }
 
@@ -64,14 +71,23 @@
         font-size: 34px;
         line-height: 1em;
         margin-bottom: 20px;
+        margin-top: 40px;
+        text-align: center;
     }
 
-    .h2-b2-association,
+    .h2-b2-association {
+        font-size: 34px;
+        margin: 0;
+        text-align: center;
+    }
+
     .h2-green-container,
     .b2-association {
         margin-top: 10px;
         font-size: 34px;
         margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
     }
 
     p,
@@ -79,6 +95,8 @@
     .text-container,
     .p-b2-association {
         font-size: 20px;
+        justify-content: center;
+        padding: 10px;
     }
 
     .dark-background {
@@ -90,12 +108,13 @@
     }
 
     .img-locaux {
-        width: 100%;
+        width: 250px;
         height: auto;
+        margin-top: 0;
     }
 
     .horaires-cards {
-        width: 350px;
+        width: 300px;
     }
 
     .p-dark-font,
@@ -181,21 +200,50 @@
 /* J'ai fixé le max à 1340px pour adapter les pages aux ecrans modernes des tablettes grand format et anciens ordi portable */
 
 @media (min-width: 851px) and (max-width: 1340px) {
+    body,
+    header,
+    footer {
+        margin: 0;
+        padding: 0;
+        font-size: 24px;
+        overflow-x: hidden;
+    }
+
     .b1 {
         padding: 30px;
         min-height: 400px;
     }
+    section,
+    .b2,
+    .b2-association,
+    .b4-association,
+    .maps-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin-top: 20px;
+        width: 90%;
+    }
 
-    .b2 {
-        flex-direction: row;
+    footer,
+    .footer-column,
+    footer ul {
+        padding: 10px;
+        font-size: 18px;
     }
 
     .b2-association div img {
         display: none;
     }
 
-    .b2-association {
-        display: block;
+    .b2 div img,
+    .dark-background-bis img,
+    .green-container img,
+    .b2-association img,
+    .activities-list {
+        display: none;
     }
 
     .image-container img {
@@ -230,16 +278,19 @@
         padding-left: 5px;
     }
 
+    .niveau-title {
+        background: none;
+    }
+
     .h2-green-container,
     .h2-b2-association {
         font-size: 48px;
-        justify-self: center
+        justify-self: center;
     }
 
     .p-green-container,
     .p-b2-association {
-        font-size: 20px;
-        margin-left: 10%;
-        margin-right: 10%;
+        font-size: 24px;
+        margin: 5px 10px;
     }
 }
