@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
         try {
             verseResult.innerHTML =
                 '<div class="loading">Chargement du verset...</div>'; // Message de chargement
-            const arabicVerses = ["12:3", "13:38", "16:104", "20:114", "26:196", "39:29", "41:4", "41:45", "42:8", "43:4", "46:13", "50:31"];
+            const arabicVerses = ["12:2", "13:37", "16:103", "20:113", "26:195", "39:28", "41:3", "41:44", "42:7", "43:3", "46:12", "50:30"];
             const verse = arabicVerses[Math.floor(Math.random() * arabicVerses.length)].replace(":", "%3A");
             const url = "https://api.quranhub.com/v1/ayah/" + verse; // Lien pour obtenir un verset aléatoire
             const response = await fetch(url);
