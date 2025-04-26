@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="card-body">
                 <h3 class="card-title">Réflexion Spirituelle : Verset Aléatoire (${verse.surat}:${verse.verse})</h3>
                 <p class="card-text verset-text">${verse.text.ar}</p>
-                <p class="card-text">${verse.text.fr}</p>
+                <p class="card-text p-ayah-fr">${verse.text.fr}</p>
             </div> 
         </div>`;
     }
