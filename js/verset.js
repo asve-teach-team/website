@@ -8,9 +8,9 @@ document.addEventListener("DOMContentLoaded", () => {
             verseResult.innerHTML =
                 '<div class="loading">Chargement du verset...</div>'; // Message de chargement
             // take only verse by subject - see https://www.alislam.org/quran/app/topics-a - use (verseNumber - 1) - topic 'arabic'
-            const arabicVerses = ["12:2", "13:37", "16:103", "20:113", "26:195", "39:28", "41:3", "41:44", "42:7", "43:3", "46:12", "50:30"];
-            const verse = arabicVerses[Math.floor(Math.random() * arabicVerses.length)].replace(":", "%3A");
-            const url = "https://api.quranhub.com/v1/ayah/" + verse; // Lien pour obtenir un verset aléatoire
+            const arabicVerses = ["12/3", "13/38", "16/104", "20/114", "26/196", "39/29", "41/4", "41/45", "42/8", "43/4", "46/13", "50/31"];
+            const verse = arabicVerses[Math.floor(Math.random() * arabicVerses.length)];
+            const url = "https://api.asve-vaureal.fr/quran/v1/verse/" + verse; // Lien pour obtenir un verset aléatoire
             const response = await fetch(url);
             if (!response.ok) {
                 throw new Error(
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 );
             }
             const verseData = await response.json();
-            displayVerse(verseData.data.text); // Affichage du verset
+            displayVerse(verseData); // Affichage du verset
         } catch (e) {
             verseResult.innerHTML = `<div class="alert alert-danger">${e.message}</div>`; // Affichage d'une alerte en cas d'erreur
         }
@@ -28,8 +28,9 @@ document.addEventListener("DOMContentLoaded", () => {
         verseResult.innerHTML = `
         <div class="card mx-auto shadow-lg">
             <div class="card-body">
-                <h3 class="card-title">Réflexion Spirituelle : Verset Aléatoire</h3>
-                <p class="card-text verset-text">${verse}</p>
+                <h3 class="card-title">Réflexion Spirituelle : Verset Aléatoire (${verse.surat}:{verse.verse})</h3>
+                <p class="card-text verset-text">${verse.text.ar}</p>
+                <p class="card-text verset-text">${verse.text.fr}</p>
             </div> 
         </div>`;
     }
