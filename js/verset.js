@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const arabicVerses = ["12/3", "13/38", "16/104", "20/114", "26/196", "39/29", "41/4", "41/45", "42/8", "43/4", "46/13", "50/31"];
             const verse = arabicVerses[Math.floor(Math.random() * arabicVerses.length)];
             const url = "https://api.asve-vaureal.fr/quran/v1/verse/" + verse; // Lien pour obtenir un verset aléatoire
-            const response = await fetch(url);
+            const response = await fetch(url, {mode: "no-cors"});
             if (!response.ok) {
                 throw new Error(
                     "Erreur de récupération des données du verset !"
