@@ -6,10 +6,11 @@
     footer {
         margin: 0;
         padding: 0;
-        font-size: 18px;
+
         overflow-x: hidden;
     }
 
+    /* *** SECTION - DIV *** */
     .b1 {
         padding: 20px;
         margin: 10px;
@@ -43,8 +44,18 @@
         width: 90%;
     }
 
-    .b2 div {
+    .b2 div,
+    .card div {
         margin: 10px 0;
+    }
+
+    .dark-background {
+        margin: 0 10px;
+    }
+
+    .dark-background-cards,
+    .card-body {
+        margin: 20px;
     }
 
     /* Masquer les images/div souhaitées */
@@ -56,6 +67,7 @@
         display: none;
     }
 
+    /* *** TEXT *** */
     h1 {
         font-size: 50px;
         line-height: 1.2em;
@@ -89,10 +101,25 @@
         justify-content: center;
     }
 
+    .p-ayah-fr,
+    .card-text {
+        justify-content: center;
+        padding: 10px;
+        width: 90%;
+    }
+
+    .p-section-livre {
+        font-size: 16px;
+        justify-content: center;
+        padding: 10px;
+    }
+
     p,
     .p-green-container,
     .text-container,
-    .p-b2-association {
+    .p-b2-association,
+    .p-ayah-fr,
+    .card-text {
         font-size: 20px;
         justify-content: center;
         padding: 10px;
@@ -102,7 +129,8 @@
         margin: 0 10px;
     }
 
-    .dark-background-cards {
+    .dark-background-cards,
+    .card-body {
         margin: 20px;
     }
 
