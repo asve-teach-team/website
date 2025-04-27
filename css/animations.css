@@ -17,13 +17,12 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 40px;
 }
 
 .ayah-jour img {
     margin-bottom: 15px;
 }
-
 
 .card {
     width: 90%;

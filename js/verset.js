@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         verseResult.innerHTML = `
         <div class="card mx-auto shadow-lg">
             <div class="card-body">
-                <h2>Réflexion Spirituelle : Verset Aléatoire (${verse.surat}:${verse.verse})</h2>
+                <h3 class="text-gradient">Réflexion Spirituelle : Verset Aléatoire (${verse.surat}:${verse.verse})</h3>
                 <img class="card-text verset-text" src="${verse.picture}" />
                 <p class="card-text p-ayah-fr">${verse.text.fr}</p>
             </div> 
