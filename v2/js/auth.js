@@ -23,6 +23,11 @@ function authenticated() {
     return ''
 }
 
+function logout(url) {
+    document.cookie = 'asve-vaureal-cookie=; Max-Age=-99999999;';
+    document.location.href = url;
+}
+
 function auth() {
     let login = document.getElementById("login");
     let name = authenticated();
@@ -45,7 +50,8 @@ function auth() {
         login.innerHTML = `
         <span class="text-gradient">${name}</span>
     <a      id="logout-link"
-            href=${urlLogout}
+            href='#'
+            onclick="logout('${urlLogout}')"
             class="button-link"
     >Se Déconnecter</a
     >`;
