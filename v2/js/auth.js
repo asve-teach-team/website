@@ -27,8 +27,8 @@ function auth() {
     let login = document.getElementById("login");
     let name = authenticated();
     let host = window.location.host;
-    let urlLogin = "https://auth.asve-vaureal.fr/login";
-    let urlLogout = "https://auth.asve-vaureal.fr/logout";
+    let urlLogin = "https://api.asve-vaureal.fr/login";
+    let urlLogout = "https://api.asve-vaureal.fr/logout";
     if (host.includes("localhost")) {
         urlLogin = "http://localhost:3000/login";
         urlLogout = "http://localhost:3000/logout";
