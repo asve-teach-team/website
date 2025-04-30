@@ -4,7 +4,7 @@ async function getSchool() {
     try {
         const response = await fetch("https://api.asve-vaureal.fr/school/v1/school", {
             headers: {
-                'Cookie': getCookieValue("asve-vaureal-cookie")
+                'Authorization': 'Bearer ' + getCookieValue("asve-vaureal-cookie")
             }
         });
         if (!response.ok) {
