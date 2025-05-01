@@ -308,7 +308,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 35px;
-    margin-top: 30px
+    margin-top: 30px;
 }
 
 .img-locaux {
@@ -317,8 +317,6 @@
     width: 350px;
     height: auto;
     padding: 15px;
-    
-    
 }
 
 /* *********************** PAGE PROGRAMMES ************************************* */
