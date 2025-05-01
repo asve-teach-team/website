@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+            name="author"
+            content="Association Savoir Vivre Ensemble ASVE Vauréal"
+    />
+    <meta
+            name="description"
+            content="Découvrez les cours de langue arabe proposés par l'ASVE Vaureal pour adultes et enfants. Apprenez l'arabe avec des méthodes interactives et des formateurs qualifiés."
+    />
+    <meta
+            name="keywords"
+            content="cours d'arabe, apprendre l'arabe, éducation religieuse, association culturelle, cours pour enfants, cours pour adultes, langue arabe, enseignement de la religion, culture arabe, apprentissage de l'arabe, valeurs religieuses, activités éducatives, communauté, intégration culturelle"
+    />
+    <meta
+            property="og:image"
+            content="file:///var/folders/dk/8ds_2jsd6w57k7ffpx6qckvr0000gn/T/TemporaryItems/NSIRD_screencaptureui_ruJFIS/Capture%20d%E2%80%99e%CC%81cran%202025-04-18%20a%CC%80%2020.19.20.png"
+    />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/component.css" />
+    <link rel="stylesheet" href="../css/utilities.css" />
+    <link rel="stylesheet" href="../css/animations.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/burger.css" />
+    <link
+            rel="icon"
+            href="../img/favicon_io/favicon.ico"
+            type="image/x-icon"
+    />
+    <script src="./js/auth.js"></script>
+    <script src="./js/service.js"></script>
+
+    <title>Accueil de l'ASVE Vaureal</title>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">
+            <a href="/index.html">
+                <img
+                        src="/img/logo/color.svg"
+                        alt="Logo de l'association ASVE"
+                />
+            </a>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-list">
+            <li id="login">
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="green-container section visible">
+        <h2 class="barlow-extrabold h2-green-container section visible">
+            API Test
+        </h2>
+        <p class="p-green-container section barlow-light visible">
+            <a class="barlow-light" href="#" onclick="getSchool()">Call /school/v1/school</a>
+        </p>
+        <div id="apiResult"></div>
+    </section>
+</main>
+<footer>
+    <div class="footer-container">
+        <div class="footer-column">
+            <a href="/index.html">
+                <img
+                        src="/img/logo/dark.svg"
+                        alt="Logo de l'association ASVE"
+                />
+            </a>
+        </div>
+        <div class="footer-column">
+            <ul class="text-gradient">
+                <li>07 60 53 39 49</li>
+                <li>
+                    <a href="mailto:ecole@asve-vaureal.fr"
+                    >ecole@asve-vaureal.fr</a
+                    >
+                </li>
+                <li>6 place Louise Michel</li>
+                <li>95490 Vauréal</li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <p class="text-gradient barlow-light">
+                <a href="/html/programmes.html">Programmes</a>
+            </p>
+            <p class="text-gradient barlow-light">
+                <a href="/html/reglement.html">Règlement intérieur</a>
+            </p>
+        </div>
+        <div class="footer-column">
+            <p class="text-gradient barlow-light">
+                <a href="/html/association.html">L'ASVE</a>
+            </p>
+            <p class="text-gradient barlow-light">
+                <a href="/html/ressources.html">Ressources</a>
+            </p>
+        </div>
+        <div class="footer-column">
+            <p class="text-gradient barlow-light">
+                <a href="/html/mentions.html">Mentions Légales</a>
+            </p>
+            <a href="/html/contact.html" class="button-link"
+            >Nous Contacter</a
+            >
+        </div>
+    </div>
+    <p class="copyright-container copyright barlow-light">
+        <span class="text-gradient barlow-extrabold">&copy; 2025</span>
+        .Conçu par.
+        <span class="text-gradient barlow-extrabold">Ly.Dj</span>
+    </p>
+</footer>
+</body>
+<script type="text/javascript">
+    window.onload = auth
+</script>
+</html>
