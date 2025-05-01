@@ -132,6 +132,24 @@
 }
 
 /* *********************** PAGE ASSOCIATION ************************************* */
+/* --------- Section B1 -------- */
+.b2-inverse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+}
+
+.b2-inverse div {
+    flex: 1; /* Permet à l'image de prendre de l'espace */
+    margin: 20px;
+}
+
+.b2-inverse div img {
+    flex: 2;
+    max-width: 200%;
+    height: auto;
+}
 
 /* --------- Section B2 -------- */
 .b2-association {

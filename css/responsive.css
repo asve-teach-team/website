@@ -23,6 +23,7 @@
     }
     section,
     .b2,
+    .b2-inverse,
     .b2-association,
     .b4-association,
     .maps-container,
@@ -45,6 +46,7 @@
     }
 
     .b2 div,
+    .b2-inverse div,
     .card div {
         margin: 10px 0;
     }
@@ -60,6 +62,7 @@
 
     /* Masquer les images/div souhaitées */
     .b2 div img,
+    .b2-inverse div img,
     .dark-background-bis img,
     .green-container img,
     .b2-association img,
