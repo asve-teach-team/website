@@ -27,26 +27,16 @@ async function asve_api(endpoint,method="GET", body = null, headers = null) {
         }
     }
 }
-async function asve_fetch(endpoint, method, body, headers = null) {
-    let h = headers;
-    if (h != null) {
-        h.append('Authorization', 'Bearer ' + asve_getCookieValue("asve-vaureal-cookie"));
-    } else {
-        h = new Headers({
-            'Authorization': 'Bearer ' + asve_getCookieValue("asve-vaureal-cookie")
-        });
-    }
+async function asve_fetch(endpoint, method = 'GET', body = null, headers = null) {
     let host = window.location.host;
     let url = "https://api.asve-vaureal.fr";
     if (host.includes("localhost")) {
         url = "http://localhost:3000";
     }
-
     return fetch(url + "/school/v1" + endpoint, {
-        mode: 'no-cors',
-        method: method,
-        body: body,
-        headers: h
+        headers: {
+            'Authorization': 'Bearer ' + asve_getCookieValue("asve-vaureal-cookie")
+        }
     });
 }
 function asve_getCookieValue(name) {
