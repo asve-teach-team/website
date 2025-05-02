@@ -37,12 +37,25 @@
     <script>
         window.asve = function() {
             return {
-                login: "login",
-                result: "apiResult"
+                login: "login"
             }
         };
     </script>
     <script async defer crossorigin="anonymous" src="./js/sdk.js"></script>
+    <script lang="javascript">
+        async function wrapCall(title, call) {
+            let apiResult = document.getElementById("apiResult");
+            apiResult.innerHTML = "Calling ...";
+            try {
+                const resp = await call();
+                apiResult.innerHTML = `<h2 class="barlow-extrabold h2-green-container section visible">${title}</h2>
+                <pre>${JSON.stringify(resp, undefined, 2)}</pre>`;
+            } catch (e) {
+                apiResult.innerHTML = `<h2 class="barlow-extrabold h2-green-container section visible">${title}</h2>
+                <div class="alert alert-danger">${e.message}</div>`;
+            }
+        }
+    </script>
 
     <title>Accueil de l'ASVE Vaureal</title>
 </head>
@@ -69,14 +82,18 @@
     </nav>
 </header>
 <main>
-    <section class="green-container section visible">
+    <section class="dark-background section visible">
         <h2 class="barlow-extrabold h2-green-container section visible">
-            API Test
+            API Demo
         </h2>
         <p class="p-green-container section barlow-light visible">
-            <a class="barlow-light" href="#" onclick="asve_getSchool()">Call /school/v1/school</a>
+            <a class="button-link" href="#" onclick="wrapCall('Get /school', asve_getSchool)">Get /school</a>
         </p>
-        <div id="apiResult"></div>
+        <div id="apiResult" class="green-container section visible">
+            <h2 class="barlow-extrabold h2-green-container section visible">
+                Les résultats s'affichent ici
+            </h2>
+        </div>
     </section>
 </main>
 <footer>

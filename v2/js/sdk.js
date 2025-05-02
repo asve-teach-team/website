@@ -1,22 +1,36 @@
+
 async function asve_getSchool() {
-    let apiResult = document.getElementById(asve().result);
-    apiResult.innerHTML = "Calling ...";
+    return asve_api("/school")
+}
+async function asve_api(endpoint,method="GET", body = null, headers = null) {
     try {
-        const response = await fetch("https://api.asve-vaureal.fr/school/v1/school", {
-            headers: {
-                'Authorization': 'Bearer ' + asve_getCookieValue("asve-vaureal-cookie")
-            }
-        });
+        const response = await asve_fetch(endpoint, method, body, headers);
         if (!response.ok) {
             throw new Error(
-                `Response status: ${response.status}`
+                `Status: ${response.status}`
             );
         }
-        const resp = await response.json();
-        apiResult.textContent = JSON.stringify(resp, undefined, 2);
+        return await response.json()
     } catch (e) {
-        apiResult.innerHTML = `<div class="alert alert-danger">${e.message}</div>`
+        return {
+            error: e.message
+        }
     }
+}
+async function asve_fetch(endpoint, method, body, headers = null) {
+    if (headers != null) {
+        headers['Authorization'] = 'Bearer ' + asve_getCookieValue("asve-vaureal-cookie")
+        return headers
+    } else {
+        headers = {
+            'Authorization': 'Bearer ' + asve_getCookieValue("asve-vaureal-cookie")
+        }
+    }
+    return fetch("https://api.asve-vaureal.fr/school/v1" + endpoint, {
+        method: method,
+        body: body,
+        headers: headers
+    });
 }
 function asve_getCookieValue(name) {
     return document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)')?.pop() || ''
