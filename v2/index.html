@@ -32,8 +32,15 @@
             href="../img/favicon_io/favicon.ico"
             type="image/x-icon"
     />
-    <script src="./js/auth.js"></script>
-    <script src="./js/service.js"></script>
+    <script>
+        window.asve = function() {
+            return {
+                login: "login",
+                result: "apiResult"
+            }
+        };
+    </script>
+    <script async defer crossorigin="anonymous" src="./js/sdk.js"></script>
 
     <title>Accueil de l'ASVE Vaureal</title>
 </head>
@@ -65,7 +72,7 @@
             API Test
         </h2>
         <p class="p-green-container section barlow-light visible">
-            <a class="barlow-light" href="#" onclick="getSchool()">Call /school/v1/school</a>
+            <a class="barlow-light" href="#" onclick="asve_getSchool()">Call /school/v1/school</a>
         </p>
         <div id="apiResult"></div>
     </section>
@@ -125,7 +132,4 @@
     </p>
 </footer>
 </body>
-<script type="text/javascript">
-    window.onload = auth
-</script>
 </html>
