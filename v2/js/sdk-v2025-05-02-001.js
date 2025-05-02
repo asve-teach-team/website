@@ -43,6 +43,7 @@ async function asve_fetch(endpoint, method, body, headers = null) {
     }
 
     return fetch(url + "/school/v1" + endpoint, {
+        mode: 'no-cors',
         method: method,
         body: body,
         headers: headers
