@@ -57,7 +57,6 @@ function asve_parseJwt(token) {
     return JSON.parse(jsonPayload);
 }
 (function() {
-            let login = document.getElementById(asve().login);
             let name = asve_authenticated();
             let host = window.location.host;
             let urlLogin = "https://api.asve-vaureal.fr/login";
@@ -74,6 +73,7 @@ function asve_parseJwt(token) {
             urlLogin.searchParams.append("returnTo", returnTo);
 
             if (name === '') {
+                let login = document.getElementById(asve().login);
                 login.innerHTML = `
     <a      id="login-link"
             href=${urlLogin.toString()}
@@ -81,14 +81,21 @@ function asve_parseJwt(token) {
     >Se Connecter</a
     >`;
             } else {
-                login.innerHTML = `
-        <span class="text-gradient">${name}</span>
+
+                let nav = document.getElementById(asve().nav);
+                nav.innerHTML = `
+                    <li><span class="text-gradient">${name}</span></li>
+                ` + nav.innerHTML;
+
+                let login = document.getElementById(asve().login);
+                login.innerHTML = `        
     <a      id="logout-link"
             href='#'
             onclick="asve_logout('${urlLogout.toString()}')"
             class="button-link"
     >Se Déconnecter</a
     >`;
+
             }
     }
 )();
