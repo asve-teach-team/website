@@ -56,7 +56,9 @@
                 if (resp.error) {
                     apiBody.innerHTML = `<p style="color: darkred">${resp.error}</p>`;
                 } else {
-                    apiBody.innerHTML = `<pre class="json-container">${JSON.stringify(resp, undefined, 2)}</pre>`;
+                    apiBody.innerHTML = `<pre id="result-json" class="json-container"></pre>`;
+                    const elem = document.getElementById('result-json');
+                    elem.innerHTML = prettyPrintJson.toHtml(resp);
                 }
             } catch (e) {
                 apiBody.innerHTML = `<p style="color: darkred">${e.message}</p>`;
