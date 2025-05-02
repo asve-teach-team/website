@@ -1,3 +1,11 @@
+function asve_getStudents() {}
+function asve_getStudent() {}
+function asve_getGroup() {}
+function asve_getFamily() {}
+function asve_getFamilies() {}
+function asve_getFamily() {}
+function asve_getTeachers() {}
+function asve_getTeacher() {}
 async function asve_getSchool() {
     return asve_api("/schools/asve")
 }
