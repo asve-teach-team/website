@@ -30,19 +30,17 @@ async function asve_api(endpoint,method="GET", body = null, headers = null) {
 async function asve_fetch(endpoint, method, body, headers = null) {
     let h = headers;
     if (h != null) {
-        h['Authorization'] = 'Bearer ' + asve_getCookieValue("asve-vaureal-cookie")
+        h.append('Authorization', 'Bearer ' + asve_getCookieValue("asve-vaureal-cookie"));
     } else {
-        h = {
+        h = new Headers({
             'Authorization': 'Bearer ' + asve_getCookieValue("asve-vaureal-cookie")
-        }
+        });
     }
     let host = window.location.host;
     let url = "https://api.asve-vaureal.fr";
     if (host.includes("localhost")) {
         url = "http://localhost:3000";
     }
-
-    console.log("headers", h);
 
     return fetch(url + "/school/v1" + endpoint, {
         mode: 'no-cors',
