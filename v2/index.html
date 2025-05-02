@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="../css/animations.css" />
     <link rel="stylesheet" href="../css/responsive.css" />
     <link rel="stylesheet" href="../css/burger.css" />
+    <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/pretty-print-json@3.0/dist/css/pretty-print-json.css>
+    <script src=https://cdn.jsdelivr.net/npm/pretty-print-json@3.0/dist/pretty-print-json.min.js></script>
     <link
             rel="icon"
             href="../img/favicon_io/favicon.ico"
@@ -44,16 +46,23 @@
     <script async defer crossorigin="anonymous" src="./js/sdk.js"></script>
     <script lang="javascript">
         async function wrapCall(title, call) {
-            let apiResult = document.getElementById("apiResult");
-            apiResult.innerHTML = "Calling ...";
+            let apiTitle = document.getElementById("result_title");
+            let apiBody = document.getElementById("result_body");
+            apiTitle.innerHTML = `Appel de ${title} ...`;
+            startTime = new Date();
             try {
                 const resp = await call();
-                apiResult.innerHTML = `<h2 class="barlow-extrabold h2-green-container section visible">${title}</h2>
-                <pre>${JSON.stringify(resp, undefined, 2)}</pre>`;
+                if (resp.error) {
+                    apiBody.innerHTML = `<p style="color: darkred">${resp.error}</p>`;
+                } else {
+                    apiBody.innerHTML = `<pre class="json-container">${JSON.stringify(resp, undefined, 2)}</pre>`;
+                }
             } catch (e) {
-                apiResult.innerHTML = `<h2 class="barlow-extrabold h2-green-container section visible">${title}</h2>
-                <div class="alert alert-danger">${e.message}</div>`;
+                apiBody.innerHTML = `<p style="color: darkred">${e.message}</p>`;
             }
+            endTime = new Date();
+            var timeDiff = endTime - startTime;
+            apiTitle.innerHTML = `${title} fait en ${timeDiff} ms`;
         }
     </script>
 
@@ -86,13 +95,12 @@
         <h2 class="barlow-extrabold h2-green-container section visible">
             API Demo
         </h2>
-        <p class="p-green-container section barlow-light visible">
+        <p class="section barlow-light visible">
             <a class="button-link" href="#" onclick="wrapCall('Get /school', asve_getSchool)">Get /school</a>
         </p>
         <div id="apiResult" class="green-container section visible">
-            <h2 class="barlow-extrabold h2-green-container section visible">
-                Les résultats s'affichent ici
-            </h2>
+            <div class="h2-green-container section visible"><h3 id="result_title">Les résultats s'affichent ici</h3></div>
+            <div id="result_body"></div>
         </div>
     </section>
 </main>
