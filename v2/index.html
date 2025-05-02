@@ -99,7 +99,16 @@
             API Demo
         </h2>
         <p class="section barlow-light visible">
-            <a class="button-link" href="#" onclick="wrapCall('Get /school', asve_getSchool)">Get /school</a>
+            <a class="button-link" href="#" onclick="wrapCall('Get /schools', asve_getSchools)">Get Schools</a>
+            <a class="button-link" href="#" onclick="wrapCall('Get /schools/{id}', asve_getSchool)">Get School</a>
+            <a class="button-link" href="#" onclick="wrapCall('Get /teachers', asve_getTeachers)">Get Teachers</a>
+            <a class="button-link" href="#" onclick="wrapCall('Get /teachers/{id}', asve_getTeacher)">Get Teacher</a>
+            <a class="button-link" href="#" onclick="wrapCall('Get /families', asve_getFamilies)">Get Families</a>
+            <a class="button-link" href="#" onclick="wrapCall('Get /families/{id}', asve_getFamily)">Get Family</a>
+            <a class="button-link" href="#" onclick="wrapCall('Get /groups', asve_getGroups)">Get Groups</a>
+            <a class="button-link" href="#" onclick="wrapCall('Get /groups/DIM-1H', asve_getGroup)">Get Group</a>
+            <a class="button-link" href="#" onclick="wrapCall('Get /students', asve_getStudents)">Get Students</a>
+            <a class="button-link" href="#" onclick="wrapCall('Get /students/{id}', asve_getStudent)">Get Student</a>
         </p>
         <div id="apiResult" class="green-container section visible">
             <div class="h2-green-container section visible"><h3 id="result_title">Les résultats s'affichent ici</h3></div>

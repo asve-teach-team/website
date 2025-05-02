@@ -1,6 +1,8 @@
-
 async function asve_getSchool() {
-    return asve_api("/school")
+    return asve_api("/schools/asve")
+}
+async function asve_getSchools() {
+    return asve_api("/schools")
 }
 async function asve_api(endpoint,method="GET", body = null, headers = null) {
     try {
@@ -26,7 +28,13 @@ async function asve_fetch(endpoint, method, body, headers = null) {
             'Authorization': 'Bearer ' + asve_getCookieValue("asve-vaureal-cookie")
         }
     }
-    return fetch("https://api.asve-vaureal.fr/school/v1" + endpoint, {
+    let host = window.location.host;
+    let url = "https://api.asve-vaureal.fr";
+    if (host.includes("localhost")) {
+        url = "http://localhost:3000";
+    }
+
+    return fetch(url + "/school/v1" + endpoint, {
         method: method,
         body: body,
         headers: headers
