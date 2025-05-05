@@ -30,8 +30,8 @@ async function asve_api(endpoint,method="GET", body = null, headers = null) {
 async function asve_fetch(endpoint, method = 'GET', body = null, headers = null) {
     let host = window.location.host;
     let url = "https://api.asve-vaureal.fr";
-    if (host.includes("localhost") && localStorage.key("DEV") === "") {
-        url = "http://localhost:3000";
+    if (localStorage.getItem("DEV_URL") !== null) {
+        url = localStorage.getItem("DEV_URL");
     }
     return fetch(url + "/school/v1" + endpoint, {
         headers: {
@@ -68,9 +68,9 @@ function asve_parseJwt(token) {
             let host = window.location.host;
             let urlLogin = "https://api.asve-vaureal.fr/login";
             let urlLogout = "https://api.asve-vaureal.fr/logout";
-            if (host.includes("localhost") && localStorage.key("DEV") === "") {
-                urlLogin = "http://localhost:3000/login";
-                urlLogout = "http://localhost:3000/logout";
+            if (localStorage.getItem("DEV_URL") !== null) {
+                urlLogin = localStorage.getItem("DEV_URL") + "/login";
+                urlLogout = localStorage.getItem("DEV_URL") + "/logout";
             }
 
             let returnTo = document.location.href
