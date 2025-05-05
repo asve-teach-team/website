@@ -16,23 +16,21 @@
             name="keywords"
             content="cours d'arabe, apprendre l'arabe, éducation religieuse, association culturelle, cours pour enfants, cours pour adultes, langue arabe, enseignement de la religion, culture arabe, apprentissage de l'arabe, valeurs religieuses, activités éducatives, communauté, intégration culturelle"
         />
-        <link rel="stylesheet" href="/css/base.css" />
-        <link rel="stylesheet" href="/css/layout.css" />
-        <link rel="stylesheet" href="/css/component.css" />
-        <link rel="stylesheet" href="/css/utilities.css" />
-        <link rel="stylesheet" href="/css/animations.css" />
-        <link rel="stylesheet" href="/css/responsive.css" />
-        <link rel="stylesheet" href="/css/burger.css" />
+        <link rel="stylesheet" href="/css/base-platform.css" />
+        <link rel="stylesheet" href="/css/layout-platform.css" />
+        <link rel="stylesheet" href="/css/component-platform.css" />
+        <link rel="stylesheet" href="/css/utilities-platform.css" />
+        <link rel="stylesheet" href="/css/animations-platform.css" />
+        <link rel="stylesheet" href="/css/responsive-platform.css" />
+        <link rel="stylesheet" href="/css/burger-platform.css">
         <link
             rel="icon"
             href="/img/favicon_io/favicon.ico"
             type="image/x-icon"
         />
-        <script src="/js/scroll.js"></script>
-        <script src="/js/burger.js"></script>
-        <script src="/js/verset.js"></script>
-
-        <title>Accueil de l'ASVE Vaureal</title>
+        <script src="/js/scroll-platform.js"></script>
+        <script src="/js/burger-platform.js"></script>
+        <title>Connexion à mon compte</title>
     </head>
     <body>
         <header>
@@ -45,128 +43,147 @@
                         />
                     </a>
                 </div>
-                <div class="menu-toggle" id="mobile-menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-                <ul class="nav-list">
-                    <li>
-                        <a href="/index.html" class="active">Accueil</a>
-                    </li>
-                    <li>
-                        <a href="/html/association.html" class="barlow-light"
-                            >L'Association</a
-                        >
-                    </li>
-                    <li>
-                        <a href="/html/programmes.html" class="barlow-light"
-                            >Programmes</a
-                        >
-                    </li>
-                    <li>
-                        <a href="/html/ressources.html" class="barlow-light"
-                            >Ressources</a
-                        >
-                    </li>
-                    <li>
-                        <a href="/html/contact.html" class="barlow-light"
-                            >Contact</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="/html/connexion.html"
-                            target="blank"
-                            class="button-link"
-                            >Se Connecter</a
-                        >
-                    </li>
-                </ul>
             </nav>
         </header>
         <main>
-            <section class="b1">
-                <div>
-                    <h3 class="barlow-light section">Site de l’ASVE Vauréal</h3>
-                    <h1 class="barlow-semibold section">
-                        Bienvenue sur notre site
-                    </h1>
-                </div>
+            <section class="b1 section">
+                <h3 class="barlow-light section">Bienvenue sur la</h3>
+                <h1 class="barlow-semibold section">Plateforme de l’ASVE</h1>
             </section>
-            <section class="b2 section">
-                <div>
-                    <img
-                        src="/img/objectifs.png"
-                        alt="Illustration d'une architecture orientale"
-                    />
-                </div>
-                <div>
-                    <h2 class="barlow-extrabold text-gradient section">
-                        Objectifs et Méthodes
-                    </h2>
-                    <p class="barlow-light section">
-                        Aujourd’hui, la scolarité des enfants est un enjeu
-                        crucial pour de nombreuses familles et plus
-                        particulièrement pour les familles musulmanes.
-                        L’éducation des enfants est une préoccupation de chaque
-                        instant afin d’obtenir leur réussite scolaire, leur
-                        procurer un épanouissement personnel et leur assurer un
-                        avenir professionnel radieux.
+            <section class="b2">
+                <!-- Forms récupéré sur le site Uiverse.io -->
+                <form class="form section">
+                    <p class="form-title text-gradient barlow-medium">
+                        Connectez-vous avec votre compte 
                     </p>
-                </div>
-            </section>
-            <section class="dark-background section">
-                <h2 class="section-title h2-dark-background barlow-extrabold">
-                    L'Association
-                </h2>
-                <div class="dark-background-container">
-                    <div class="dark-background-cards">
-                        <a href="/html/association.html"
-                            ><img
-                                src="/img/livre.png"
-                                alt="Illustration de manuels"
-                                class="img-cards"
-                        /></a>
-                        <h3 class="image-title">Les Manuels</h3>
+                    <div class="social-login-row">
+                        <div class="social-login-container">
+                            <a
+                                href="https://accounts.google.com/InteractiveLogin/signinchooser?elo=1&ifkv=AXH0vVuxHvRYu6Qi-pW1xRaMyI2yjryNGGTgiDm44MiBFRPyQdcH7d6P-oqi4CwnREXX2p_H_A28Qg&ddm=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+                                target="_blank"
+                                class="social-link"
+                            >
+                                <button
+                                    type="button"
+                                    class="social-button google barlow-light"
+                                >
+                                    <div class="social-button-img-container">
+                                        <img
+                                            class="social-button-img"
+                                            src="/img/google_account.svg"
+                                            alt="Icone de Google Accounts"
+                                        />
+                                    </div>
+                                    <div class="social-button-title">
+                                        Google
+                                    </div>
+                                </button>
+                            </a>
+                        </div>
+                        <div class="social-login-container">
+                            <a
+                                href="https://account.microsoft.com/account?lang=fr-FRn"
+                                target="_blank"
+                                class="social-link"
+                            >
+                                <button
+                                    type="button"
+                                    class="social-button microsoft barlow-light"
+                                >
+                                    <div class="social-button-img-container">
+                                        <img
+                                            class="social-button-img"
+                                            src="/img/microsoft_account.svg.png"
+                                            alt="Icone de Microsoft"
+                                        />
+                                    </div>
+                                    <div class="social-button-title">
+                                        Microsoft
+                                    </div>
+                                </button>
+                            </a>
+                        </div>
                     </div>
-                    <div class="dark-background-cards">
-                        <a href="/html/association.html"
-                            ><img
-                                src="/img/prof.png"
-                                alt="Illustration d'un prof de dos"
-                                class="img-cards"
-                        /></a>
-                        <h3 class="image-title">Le Corps Professoral</h3>
+                    <div class="social-login-row">
+                        <div class="social-login-container">
+                            <a
+                                href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZnIifQ%3D%3D%22%7D"
+                                target="_blank"
+                                class="social-link"
+                            >
+                                <button
+                                    type="button"
+                                    class="social-button microsoft barlow-light"
+                                >
+                                    <div class="social-button-img-container">
+                                        <img
+                                            class="social-button-img"
+                                            src="/img/X_account.svg"
+                                            alt="Icone de X (twitter)"
+                                        />
+                                    </div>
+                                    <div class="social-button-title">X</div>
+                                </button>
+                            </a>
+                        </div>
+                        <div class="social-login-container">
+                            <a
+                                href="https://www.instagram.com/accounts/login/?source=post_chaining_impression_limit&locale=fr_CA"
+                                target="_blank"
+                                class="social-link"
+                            >
+                                <button
+                                    type="button"
+                                    class="social-button x barlow-light"
+                                >
+                                    <div class="social-button-img-container">
+                                        <img
+                                            class="social-button-img"
+                                            src="/img/insta_account.png"
+                                            alt="Icone d'Instagram "
+                                        />
+                                    </div>
+                                    <div class="social-button-title">
+                                        Instagram
+                                    </div>
+                                </button>
+                            </a>
+                        </div>
                     </div>
-                    <div class="dark-background-cards">
-                        <a href="/html/association.html"
-                            ><img
-                                src="/img/class_icon.png"
-                                alt="Illustration d'une salle de classe"
-                                class="img-cards"
-                        /></a>
-                        <h3 class="image-title">Les Locaux</h3>
+                    <button type="submit" class="submit barlow-medium">
+                        Se connecter
+                    </button>
+                </form>
+                <p>ou</p>
+                <form class="form section">
+                    <p class="form-title text-gradient barlow-medium">
+                        Connectez vous avec vos identifiants 
+                    </p>
+                    <div class="input-container barlow-light">
+                        <input
+                            type="email"
+                            placeholder="Entrer votre email"
+                            required
+                        />
+                        <span></span>
                     </div>
-                </div>
+                    <div class="input-container barlow-light">
+                        <input
+                            type="password"
+                            placeholder="Entrer votre mot de passe"
+                            required
+                            autocomplete="off"
+                        />
+                    </div>
+                    <button type="submit" class="submit barlow-medium">
+                        Se connecter
+                    </button>
+                    <p class="signup-link barlow-light">
+                        Pas encore inscrit ?
+                        <a href="">Je crée mon compte</a>
+                    </p>
+                </form>
             </section>
-            <section class="green-container section">
-                <h2 class="barlow-extrabold h2-green-container section">
-                    Les Objectifs
-                </h2>
-                <p class="p-green-container section barlow-light">
-                    Offrir une éducation et une recherche centrée sur
-                    l’apprenant qui permettent à nos jeunes de façonner un monde
-                    meilleur.
-                </p>
-            </section>
-            <div class="section ayah-jour">
-                <div id="verset"></div>
-                <img
-                    src="/img/calligraphie.png"
-                    alt="image d'une calligraphie arabe"
-                />
-            </div>
             <a href="#" class="button">
                 <svg class="svgIcon" viewBox="0 0 384 512">
                     <path
@@ -176,17 +193,17 @@
             </a>
         </main>
         <footer>
-            <div class="logo">
-                <a href="/index.html">
-                    <img
-                        src="/img/logo/color.svg"
-                        alt="Logo de l'association ASVE"
-                    />
-                </a>
-            </div>
             <div class="footer-container">
                 <div class="footer-column">
-                    <ul>
+                    <a href="/index.html">
+                        <img
+                            src="/img/logo/dark.svg"
+                            alt="Logo de l'association ASVE"
+                        />
+                    </a>
+                </div>
+                <div class="footer-column">
+                    <ul class="text-gradient">
                         <li>07 60 53 39 49</li>
                         <li>
                             <a href="mailto:ecole@asve-vaureal.fr"
@@ -197,42 +214,36 @@
                         <li>95490 Vauréal</li>
                     </ul>
                 </div>
+
                 <div class="footer-column">
                     <p class="text-gradient barlow-light">
-                        <a href="/html/programmes.html">Programmes</a>
+                        <a href="https://www.asve-vaureal.fr/" target="blank"
+                            >Site de l'ASVE</a
+                        >
                     </p>
                     <p class="text-gradient barlow-light">
-                        <a href="/html/reglement.html" target="blank"
-                            >Règlement intérieur</a
+                        <a
+                            href="https://www.asve-vaureal.fr/html/reglement.html"
+                            target="_blank"
+                            >Règlement Intérieur</a
                         >
                     </p>
                 </div>
                 <div class="footer-column">
                     <p class="text-gradient barlow-light">
-                        <a href="/html/association.html">L'ASVE</a>
+                        <a href="/html/mentions.html">Mentions Légales</a>
                     </p>
-                    <p class="text-gradient barlow-light">
-                        <a href="/html/ressources.html">Ressources</a>
-                    </p>
-                </div>
-                <div class="footer-column">
-                    <p class="text-gradient barlow-light">
-                        <a href="/html/mentions.html" target="blank"
-                            >Mentions Légales</a
+                    <p class="copyright-container copyright barlow-light">
+                        <span class="text-gradient barlow-extrabold"
+                            >&copy; 2025</span
+                        >
+                        .Conçu par.
+                        <span class="text-gradient barlow-extrabold"
+                            >Ly.Dj</span
                         >
                     </p>
-                    <a
-                        href="/html/contact.html"
-                        target="blank"
-                        class="button-link"
-                        >Nous Contacter</a
-                    >
                 </div>
             </div>
-            <p class="copyright barlow-light">
-                &copy; 2025 Conçu par
-                <span class="text-gradient barlow-extrabold">Ly.Dj</span>
-            </p>
         </footer>
     </body>
 </html>

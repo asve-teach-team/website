@@ -1,0 +1,49 @@
+/* ******** BUTTON ******** */
+.button-link {
+    background: linear-gradient(
+        122.095deg,
+        #51d3ac 3%,
+        #32baaa 38%,
+        #1aa8a8 64%,
+        #0497a6 100%
+    );
+    color: #fff6ef;
+    border: none; /* Enleve la bordure par défaut */
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.9s;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+}
+
+.button-link:hover {
+    background: #fff6ef;
+    color: #1aa8a8;
+    border: none;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Ombre plus prononcée au survol */
+    transition-duration: 0.9s;
+}
+
+/* ******** TEXT_DEGRADE ******** */
+.text-gradient {
+    background: linear-gradient(
+        122.095deg,
+        #51d3ac 3%,
+        #32baaa 38%,
+        #1aa8a8 64%,
+        #0497a6 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: #0000; /* Astuce trouvé sur le site " geekcommunicant " pour appliquer le dégradé uniquement sur le texte */
+}
+
+/* ******* COPYRIGHT (Footer) ******* */
+.copyright {
+    text-align: left;
+    font-size: 18px;
+    padding: 5%;
+}

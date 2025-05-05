@@ -1,0 +1,219 @@
+/* ----------------- RESPONSIVE POUR SMARTPHONES ---------------------- */
+
+@media (max-width: 850px) {
+    body,
+    header,
+    footer {
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        overflow-x: hidden;
+    }
+
+    .b1 {
+        padding: 20px;
+        margin: 10px;
+        margin-bottom: 60px;
+    }
+
+    .social-button-title {
+        display: none;
+    }
+
+    section,
+    .b2,
+    .b2-association,
+    .b4-association,
+    .maps-container,
+    .footer-container,
+    .footer-column,
+    .text-container,
+    .columns-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .columns-container-trimestre {
+        display: flex;
+        gap: 20px
+    }
+
+    .b2 div {
+    }
+
+    /* Masquer les images/div souhaitées */
+
+    .social-button-title,
+    footer div {
+        display: none;
+    }
+
+    .button-container-bulletin,
+    .row {
+        display: contents;
+    }
+
+    .b2 div,
+    .dark-background-bis img,
+    .green-container img,
+    .b2-association img,
+    .h2-green-container,
+    .h2-b2-association {
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-locaux {
+        width: 70%;
+        height: auto;
+    }
+
+    .horaires-cards {
+        width: 70%;
+    }
+
+    .p-dark-font,
+    .dark-background-container {
+        margin: 20px;
+    }
+
+    .niveau-title {
+        background: none;
+    }
+}
+
+footer {
+    background-color: #312f36;
+    color: #fff6ef;
+    padding: 20px 0; /* Ajoute un peu d'espace en haut et en bas */
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux colonnes de passer à la ligne sur les petits écrans */
+    justify-content: space-between;
+    align-items: flex-start; /* Aligne les éléments en haut */
+    max-width: 1200px;
+    margin: 0 auto; /* Centre le footer */
+    padding: 0 20px; /* Ajoute un peu d'espace sur les côtés */
+}
+
+.footer-column {
+    flex: 1; /* Chaque colonne prend une part égale de l'espace */
+    padding: 10px;
+    min-width: 200px; /* Assure que les colonnes ne deviennent pas trop étroites */
+}
+
+footer ul {
+    list-style: none;
+    padding: 0; /* Supprime le padding par défaut */
+    margin: 0; /* Supprime la marge par défaut */
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit; /* Prend la couleur du texte parent */
+    line-height: 2;
+}
+
+footer a:hover {
+    color: #fff6ef; /* Change la couleur au survol */
+}
+
+footer div img {
+    width: 100px;
+    height: auto;
+    margin: 15px;
+}
+
+footer ul li {
+    line-height: 1.5;
+}
+
+.copyright {
+    text-align: center; /* Centre le texte des droits d'auteur */
+    margin-top: 20px; /* Ajoute un espace au-dessus */
+    font-size: 0.9em; /* Réduit légèrement la taille de la police */
+}
+
+/* Styles pour les petits écrans */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Colonne unique sur les petits écrans */
+        align-items: center; /* Centre les colonnes */
+    }
+
+    .footer-column {
+        text-align: center; /* Centre le texte dans chaque colonne */
+        margin-bottom: 20px; /* Ajoute un espace entre les colonnes */
+    }
+}
+
+/* ----------------- RESPONSIVE POUR TABLETTES ---------------------- */
+
+/* J'ai fixé le max à 1340px pour adapter les pages aux ecrans modernes des tablettes grand format et anciens ordi portable */
+
+@media (min-width: 851px) and (max-width: 1340px) {
+    body {
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        overflow: hidden;
+    }
+
+    .b1 {
+        padding: 30px;
+        min-height: 400px;
+    }
+
+    .b2 {
+        flex-direction: row;
+    }
+
+    .b2 div img,
+    .image-container img {
+        max-width: 90%;
+    }
+
+    .locaux img {
+        width: 250px;
+    }
+
+    .dark-background-bis,
+    .green-container {
+        width: 85%;
+        padding: 50px;
+    }
+
+    .dark-background-container-bis,
+    .locaux {
+        flex-wrap: nowrap;
+    }
+
+    .maps-container {
+        flex-wrap: wrap;
+    }
+
+    .text-container {
+        padding-left: 5px;
+    }
+
+    .h2-green-container,
+    .h2-b2-association {
+        font-size: 48px;
+    }
+
+    .p-green-container,
+    .p-b2-association {
+        font-size: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
